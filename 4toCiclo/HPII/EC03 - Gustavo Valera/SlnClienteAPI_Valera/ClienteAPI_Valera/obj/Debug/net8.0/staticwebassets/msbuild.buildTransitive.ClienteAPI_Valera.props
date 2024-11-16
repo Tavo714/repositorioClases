@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ClienteAPI_Valera.props" />
+</Project>

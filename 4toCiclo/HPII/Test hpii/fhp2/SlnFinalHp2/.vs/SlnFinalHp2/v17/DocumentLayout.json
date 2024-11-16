@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|d:\\gitrepositories\\final_hpii\\slnfinalhp2\\prjfinalhp2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|solutionrelative:prjfinalhp2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|d:\\gitrepositories\\final_hpii\\slnfinalhp2\\prjfinalhp2\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|solutionrelative:prjfinalhp2\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|d:\\gitrepositories\\final_hpii\\slnfinalhp2\\prjfinalhp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|solutionrelative:prjfinalhp2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|d:\\gitrepositories\\final_hpii\\slnfinalhp2\\prjfinalhp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|solutionrelative:prjfinalhp2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|d:\\gitrepositories\\final_hpii\\slnfinalhp2\\prjfinalhp2\\models\\hpiifinalbibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25BFF37E-BCB7-4456-B107-C9AEB1EA301F}|PrjFinalHp2\\PrjFinalHp2.csproj|solutionrelative:prjfinalhp2\\models\\hpiifinalbibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "PrjFinalHp2\\Models\\Usuario.cs",
+              "ToolTip": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Models\\Usuario.cs",
+              "RelativeToolTip": "PrjFinalHp2\\Models\\Usuario.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wBUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T02:25:15.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "PrjFinalHp2\\Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "PrjFinalHp2\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAvwEYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:50:28.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Program.cs",
+              "RelativeDocumentMoniker": "PrjFinalHp2\\Program.cs",
+              "ToolTip": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Program.cs",
+              "RelativeToolTip": "PrjFinalHp2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:33:36.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\appsettings.json",
+              "RelativeDocumentMoniker": "PrjFinalHp2\\appsettings.json",
+              "ToolTip": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\appsettings.json",
+              "RelativeToolTip": "PrjFinalHp2\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T00:31:23.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HpiifinalBibliotecaContext.cs",
+              "DocumentMoniker": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Models\\HpiifinalBibliotecaContext.cs",
+              "RelativeDocumentMoniker": "PrjFinalHp2\\Models\\HpiifinalBibliotecaContext.cs",
+              "ToolTip": "D:\\GITrepositories\\final_hpii\\SlnFinalHp2\\PrjFinalHp2\\Models\\HpiifinalBibliotecaContext.cs",
+              "RelativeToolTip": "PrjFinalHp2\\Models\\HpiifinalBibliotecaContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:29:39.874Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

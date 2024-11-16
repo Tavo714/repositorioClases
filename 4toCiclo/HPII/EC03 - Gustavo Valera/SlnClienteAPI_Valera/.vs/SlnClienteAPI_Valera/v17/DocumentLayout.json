@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\listapapeletasnopagadas_valera.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\listapapeletasnopagadas_valera.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\controllers\\satcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\controllers\\satcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\listapropietarios_valera.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\listapropietarios_valera.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\models\\listarpapeletasnopagadaspordni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\models\\listarpapeletasnopagadaspordni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\models\\listarpropietariosporinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\models\\listarpropietariosporinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\models\\actualizarpapeletaapagada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\models\\actualizarpapeletaapagada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\editpropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\editpropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\indexpropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\indexpropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\detailspropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\detailspropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\deletepropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\deletepropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\views\\sat\\createpropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\views\\sat\\createpropietario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnclienteapi_valera\\clienteapi_valera\\models\\propietario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D039FE49-7FA6-4A60-998B-CDB4663E30BD}|ClienteAPI_Valera\\ClienteAPI_Valera.csproj|solutionrelative:clienteapi_valera\\models\\propietario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListaPapeletasNOPagadas_Valera.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\ListaPapeletasNOPagadas_Valera.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\ListaPapeletasNOPagadas_Valera.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\ListaPapeletasNOPagadas_Valera.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\ListaPapeletasNOPagadas_Valera.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T12:32:23.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListaPropietarios_Valera.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\ListaPropietarios_Valera.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\ListaPropietarios_Valera.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\ListaPropietarios_Valera.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\ListaPropietarios_Valera.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T12:01:48.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeletePropietario.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\DeletePropietario.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\DeletePropietario.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\DeletePropietario.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\DeletePropietario.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T11:17:06.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditPropietario.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\EditPropietario.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\EditPropietario.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\EditPropietario.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\EditPropietario.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T11:14:31.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreatePropietario.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\CreatePropietario.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\CreatePropietario.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\CreatePropietario.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\CreatePropietario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T10:35:43.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetailsPropietario.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\DetailsPropietario.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\DetailsPropietario.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\DetailsPropietario.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\DetailsPropietario.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T09:36:41.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IndexPropietario.cshtml",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\IndexPropietario.cshtml",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Views\\SAT\\IndexPropietario.cshtml",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Views\\SAT\\IndexPropietario.cshtml",
+              "RelativeToolTip": "ClienteAPI_Valera\\Views\\SAT\\IndexPropietario.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T06:56:06.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Program.cs",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Program.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Program.cs",
+              "RelativeToolTip": "ClienteAPI_Valera\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:17:49.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SATController.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Controllers\\SATController.cs",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Controllers\\SATController.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Controllers\\SATController.cs",
+              "RelativeToolTip": "ClienteAPI_Valera\\Controllers\\SATController.cs",
+              "ViewState": "AQIAAAEBAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:09:15.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListarPropietariosPorInicial.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "RelativeToolTip": "ClienteAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:05:10.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListarPapeletasNoPagadasPorDNI.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "RelativeToolTip": "ClienteAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:04:44.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActualizarPapeletaAPagada.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "RelativeToolTip": "ClienteAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:04:12.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Propietario.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\Propietario.cs",
+              "RelativeDocumentMoniker": "ClienteAPI_Valera\\Models\\Propietario.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnClienteAPI_Valera\\ClienteAPI_Valera\\Models\\Propietario.cs",
+              "RelativeToolTip": "ClienteAPI_Valera\\Models\\Propietario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T06:03:23.582Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

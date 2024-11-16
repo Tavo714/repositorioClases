@@ -1,0 +1,66 @@
+﻿@model IEnumerable<PrjClienteFinalHerramientas.Models.Libro>
+
+@{
+    ViewData["Title"] = "IndexLibros";
+}
+
+<h1>Listado de Libros</h1>
+
+<p>
+    <a asp-action="CreateLibro">Agregar</a>
+</p>
+<div class="table-responsive pt-4">
+        <table class="table table-striped table-bordered border-primary">
+            <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.LibroId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AñoPublicacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AutorId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Stock)
+                </th>
+                
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LibroId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AñoPublicacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AutorId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock)
+                </td>
+                
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
+    <div>
+        <p>Cantidad de Libros: <strong>@Model.Count()</strong></p>
+    </div>

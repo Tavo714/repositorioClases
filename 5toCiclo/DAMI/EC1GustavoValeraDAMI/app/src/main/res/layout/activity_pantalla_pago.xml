@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaPago">
+
+    <!-- Texto de saludo -->
+    <TextView
+        android:id="@+id/tvSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola, Nombre"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Mostrar DNI -->
+    <TextView
+        android:id="@+id/tvDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DNI: 12345678"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaludo" />
+
+    <!-- Etiqueta de detalle de compra -->
+    <TextView
+        android:id="@+id/tvDetalleCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Este es el detalle de tu compra"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDni" />
+
+    <!-- Primer Producto y Precio -->
+    <TextView
+        android:id="@+id/tvProducto1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Producto 1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalleCompra"
+        app:layout_constraintEnd_toStartOf="@+id/tvPrecioProducto1" />
+
+    <TextView
+        android:id="@+id/tvPrecioProducto1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="S/ 0.00"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetalleCompra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvProducto1" />
+
+    <!-- Segundo Producto y Precio -->
+    <TextView
+        android:id="@+id/tvProducto2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Producto 2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducto1"
+        app:layout_constraintEnd_toStartOf="@+id/tvPrecioProducto2" />
+
+    <TextView
+        android:id="@+id/tvPrecioProducto2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="S/ 0.00"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvProducto2" />
+
+    <!-- Tercer Producto y Precio -->
+    <TextView
+        android:id="@+id/tvProducto3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Producto 3"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducto2"
+        app:layout_constraintEnd_toStartOf="@+id/tvPrecioProducto3" />
+
+    <TextView
+        android:id="@+id/tvPrecioProducto3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="S/ 0.00"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvProducto3" />
+
+    <!-- IGV -->
+    <TextView
+        android:id="@+id/tvIgv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IGV: S/ 0.00"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducto3" />
+
+    <!-- Total a pagar -->
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total a pagar: S/ 0.00"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIgv" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

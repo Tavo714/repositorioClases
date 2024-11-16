@@ -1,0 +1,6 @@
+Para usar la plantilla:
+1. Cambiar el nombre del proyecto en:
+	a. La carpeta.
+	b. package.json (1 vez)
+	c. package-lock.json (2 veces)
+2. Inicializar en VS e instalar node con "npm i"

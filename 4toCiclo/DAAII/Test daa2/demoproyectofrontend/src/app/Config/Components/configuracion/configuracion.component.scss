@@ -1,0 +1,41 @@
+
+/* Centra el contenido del contenedor .center */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Ajusta la altura según sea necesario */
+}
+
+/* Estilo para la tarjeta */
+.card {
+  width: 80%; /* Ocupa el 80% del ancho del contenedor */
+  max-width: 600px; /* Ancho máximo para evitar que sea demasiado grande en pantallas grandes */
+  padding: 20px; /* Añade algo de espacio interno */
+}
+
+/* Estilo para el avatar en el encabezado de la tarjeta */
+.header-image {
+  background-image: url('https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Estilo para el formulario dentro de la tarjeta */
+.userForm {
+  display: flex;
+  flex-direction: column; /* Alinea los campos verticalmente */
+  gap: 16px; /* Espacio entre los campos */
+}
+
+/* Estilo para los campos de entrada */
+.mat-form-field {
+  width: 100%; /* Asegura que los campos ocupen todo el ancho del contenedor */
+}
+
+/* Opcional: Añadir algo de margen a los botones para separarlos */
+.mat-card-actions button {
+  margin-right: 8px; /* Espacio entre los botones */
+}

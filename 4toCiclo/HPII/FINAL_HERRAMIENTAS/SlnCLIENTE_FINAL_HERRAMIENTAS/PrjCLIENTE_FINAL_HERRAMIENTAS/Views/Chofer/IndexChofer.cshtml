@@ -1,0 +1,77 @@
+﻿@model IEnumerable<PrjCLIENTE_FINAL_HERRAMIENTAS.Models.Chofer>
+
+@{
+    ViewData["Title"] = "IndexChofer";
+}
+
+<h1>IndexChofer</h1>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<br/>
+
+<p>
+    <a asp-action="CreateChofer">Nuevo Chofer</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodChof)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomChof)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FecIng)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodCat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SdoBas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eliminado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodChof)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomChof)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FecIng)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodCat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SdoBas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eliminado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditChofer", 
+                            new { id=item.CodChof }) |
+                @Html.ActionLink("Detalle", "DetailsChofer", 
+                            new { id=item.CodChof }) |
+                @Html.ActionLink("Eliminar", "DeleteChofer", 
+                            new { id=item.CodChof })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

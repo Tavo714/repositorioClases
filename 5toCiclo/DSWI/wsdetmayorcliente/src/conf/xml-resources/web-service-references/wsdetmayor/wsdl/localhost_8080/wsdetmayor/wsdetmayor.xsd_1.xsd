@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://wsdetmayor/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wsdetmayor/">
+
+<xs:element name="detmayor" type="tns:detmayor" />
+
+<xs:element name="detmayorResponse" type="tns:detmayorResponse" />
+
+<xs:complexType name="detmayor">
+<xs:sequence>
+<xs:element name="a" type="xs:int" />
+<xs:element name="b" type="xs:int" />
+<xs:element name="c" type="xs:int" />
+<xs:element name="d" type="xs:int" />
+<xs:element name="mayor" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="detmayorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

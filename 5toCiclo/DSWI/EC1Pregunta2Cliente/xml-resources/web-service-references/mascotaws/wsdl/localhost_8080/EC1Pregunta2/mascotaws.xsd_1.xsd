@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="lista" type="tns:lista" />
+
+<xs:element name="listaResponse" type="tns:listaResponse" />
+
+<xs:complexType name="lista">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mascota" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mascota">
+<xs:sequence>
+<xs:element name="animal" type="xs:string" minOccurs="0" />
+<xs:element name="dni" type="xs:string" minOccurs="0" />
+<xs:element name="domicilio" type="xs:string" minOccurs="0" />
+<xs:element name="dueño" type="xs:string" minOccurs="0" />
+<xs:element name="id_mascota" type="xs:int" minOccurs="0" />
+<xs:element name="nacimiento" type="xs:dateTime" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="registro" type="xs:dateTime" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

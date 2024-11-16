@@ -1,0 +1,67 @@
+﻿@model IEnumerable<PrjClienteFinalHerramientas.Models.ListarUsuariosConPenalidades>
+
+@{
+    ViewData["Title"] = "ListarUsuariosPenalidad";
+}
+
+<h1>ListarUsuariosPenalidad</h1>
+
+
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.UsuarioId)</th>
+            <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaRegistro)</th>
+            <th>@Html.DisplayNameFor(model => model.Dni)</th>
+            <th>@Html.DisplayNameFor(model => model.Direccion)</th>
+            <th>@Html.DisplayNameFor(model => model.Telefono)</th>
+            <th>@Html.DisplayNameFor(model => model.EstadoUsuario)</th>
+            <th>@Html.DisplayNameFor(model => model.Penalidad)</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.UsuarioId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                <td>@Html.DisplayFor(modelItem => item.Dni)</td>
+                <td>@Html.DisplayFor(modelItem => item.Direccion)</td>
+                <td>@Html.DisplayFor(modelItem => item.Telefono)</td>
+                <td>@Html.DisplayFor(modelItem => item.EstadoUsuario)</td>
+                <td>@Html.DisplayFor(modelItem => item.Penalidad)</td>
+                <td>
+
+                    <form asp-action="CambiarPenalidad" method="post" class="d-inline">
+                        <input type="hidden" name="UsuarioID" value="@item.UsuarioId" />
+                        <button type="submit" class="btn btn-warning">Pagar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a asp-action="IndexUsuario" asp-controller="Usuario" class="btn btn-primary">Regresar</a>
+</p>
+
+<div class="text-center">
+    <p>
+        Cantidad de Usuarios: <strong>@Model.Count()</strong>
+    </p>
+</div>

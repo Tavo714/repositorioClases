@@ -1,0 +1,99 @@
+
+.header-usuario {
+    background-image: url('https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg');
+    background-size: cover;
+  }
+  
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    margin-left:-16px; /* Espacio a la izquierda del botón */
+    margin-top: -8px;
+}
+
+.mat-menu-panel {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Ajustes adicionales si es necesario */
+.mat-menu-item {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de la barra de herramientas */
+mat-toolbar {
+    background-color: black; /* Color de fondo */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el botón de menú */
+button.menu {
+    color: white;
+    margin-right: 16px; /* Espacio a la derecha del botón */
+}
+
+/* Espaciador para empujar los botones hacia la derecha */
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+/* Estilo para el botón de cuenta */
+button.cuenta {
+    color: white;
+    margin-right: 4px; /* Espacio a la derecha del botón */
+}
+
+/* Estilo para el botón de acceso */
+button.acceso {
+    color: white;
+}
+
+
+/* Ajusta el tamaño del icono en los botones */
+button.mat-icon-button mat-icon {
+    font-size: 24px; /* Tamaño del icono */
+}
+
+hr{
+    margin: 1px;
+}
+
+.master-container{
+    height: calc(100% - 67px);
+ }
+
+
+ /* Estilo para el mat-drawer */
+mat-drawer {
+    width: 250px;
+    padding: 16px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el mat-selection-list */
+mat-selection-list {
+    width: 100%;
+}
+
+/* Estilo para el mat-list-item */
+mat-list-item {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilo para el título del mat-list-item */
+div[mat-subheader] {
+    font-weight: bold;
+}
+

@@ -1,0 +1,33 @@
+CRUD USUARIO:
+
+Listado:
+http://localhost:5196/api/Usuario/GetUsuarios
+
+Buscar id:
+http://localhost:5196/api/Usuario/GetUsuario7
+
+Post:
+http://localhost:5196/api/Usuario/PostUsuario
+
+Put: 
+http://localhost:5196/api/Usuario/PutUsuario
+
+Delete:
+http://localhost:5196/api/Usuario/DeleteUsuario/26
+
+CRUD PRESTAMO:
+
+Listado:
+http://localhost:5196/api/Prestamo/GetPrestamos
+
+Buscar id:
+http://localhost:5196/api/Prestamo/GetPrestamo/7
+
+Post:
+http://localhost:5196/api/Prestamo/PostPrestamo
+
+Put:
+http://localhost:5196/api/Prestamo/PutPrestamo
+
+Delete:
+http://localhost:5196/api/Prestamo/DeletePrestamo/27

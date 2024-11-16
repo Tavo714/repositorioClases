@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ClienteAPI_Valera.Models.Propietario>
+
+@{
+    ViewData["Title"] = "IndexPropietario";
+}
+
+<h1>IndexPropietario</h1>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<br />
+
+<p>
+    <a asp-action="CreatePropietario" class="btn btn-info">Nuevo Propietario</a>
+    <a asp-action="ListaPropietarios_Valera" class="btn btn-success">Lista de Propietarios por Inicial</a>
+    <a asp-action="ListaPapeletasNOPagadas_Valera" class="btn btn-success">Lista de Papeletas NO Pagadas</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Dnipro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nompro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distrito)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eliminado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dnipro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nompro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distrito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eliminado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditPropietario", 
+                                new {id=item.Dnipro}) |
+                @Html.ActionLink("Detalle", "DetailsPropietario", 
+                                new {id=item.Dnipro}) |
+                @Html.ActionLink("Eliminar", "DeletePropietario", 
+                                new {id=item.Dnipro})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

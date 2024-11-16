@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PrjCLIENTE_FINAL_HERRAMIENTAS.props" />
+</Project>

@@ -1,0 +1,53 @@
+.historial-container {
+    background-color: #141414;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historial-title {
+    text-align: center;
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+.historial-table-container {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+}
+
+.historial-table {
+    min-width: 650px;
+}
+
+.historial-header {
+    color: #e50914 !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid #e50914 !important;
+    background-color: #333333 !important;
+    text-align: center !important;
+}
+
+.historial-cell {
+    color: #ffffff;
+    border-bottom: 1px solid #444444;
+    text-align: center !important;
+}
+
+.historial-row:hover {
+    background-color: #eedddd;
+}
+
+.loading-container,
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ffffff;
+}

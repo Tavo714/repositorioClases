@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://wscalcular/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wscalcular/">
+
+<xs:element name="calcular" type="tns:calcular" />
+
+<xs:element name="calcularResponse" type="tns:calcularResponse" />
+
+<xs:complexType name="calcular">
+<xs:sequence>
+<xs:element name="r" type="xs:double" />
+<xs:element name="x" type="xs:double" />
+<xs:element name="a" type="xs:double" />
+<xs:element name="b" type="xs:double" />
+<xs:element name="c" type="xs:double" />
+<xs:element name="t" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcularResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

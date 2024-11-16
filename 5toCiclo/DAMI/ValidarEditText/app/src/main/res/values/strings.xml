@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ValidarEditText</string>
+    <string name="mensaje_caja_vacia">No deje este dato vacio</string>
+</resources>

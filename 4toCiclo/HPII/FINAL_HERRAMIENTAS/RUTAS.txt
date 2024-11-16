@@ -1,0 +1,85 @@
+VIAJES CHOFER RUTAS PASAJEROS
+
+***PASAJERO:
+
+LISTA:
+http://localhost:5140/api/Pasajero/GetPasajero
+
+BUSCAR ID:
+http://localhost:5140/api/Pasajero/GetPasajero/000007
+
+POST:
+http://localhost:5140/api/Pasajero/PostPasajero
+
+PUT:
+http://localhost:5140/api/Pasajero/PutPasajero
+
+DELETE:
+http://localhost:5140/api/Pasajero/DeletePasajero/000243
+
+***VIAJE:
+
+LISTA:
+http://localhost:5140/api/Viaje/GetViajes
+
+BUSCAR ID:
+http://localhost:5140/api/Viaje/GetViaje/100007
+
+POST:
+http://localhost:5140/api/Viaje/PostViaje
+
+PUT:
+http://localhost:5140/api/Viaje/PutViaje
+
+DELETE:
+http://localhost:5140/api/Viaje/DeleteViaje/100084
+
+***CHOFER
+
+LISTA:
+http://localhost:5140/api/Chofer/GetChoferes
+
+BUSCAR ID:
+http://localhost:5140/api/Chofer/GetChofer/C0007
+
+POST:
+http://localhost:5140/api/Chofer/PostChofer
+
+PUT:
+http://localhost:5140/api/Chofer/PutChofer
+
+DELETE:
+http://localhost:5140/api/Chofer/DeleteChofer/C0009
+
+***RUTAS
+
+LISTA:
+http://localhost:5140/api/Ruta/GetRutas
+
+BUSCAR ID:
+http://localhost:5140/api/Ruta/GetRuta/LMCH
+
+POST:
+http://localhost:5140/api/Ruta/PostRuta
+
+PUT:
+http://localhost:5140/api/Ruta/PutRuta
+
+DELETE:
+http://localhost:5140/api/Ruta/DeleteRuta/PITA
+
+***OBTENER INGRESOS POR MES Y AÑO:
+
+http://localhost:5140/api/sp_ObtenerIngresosPorMesYAño?mes=3&a%C3%B1o=2024
+
+***OBTENER PASAJEROS POR MES Y AÑO:
+
+http://localhost:5140/api/sp_ObtenerPasajerosPorMes?mes=3&a%C3%B1o=2024
+
+***OBTENER CHOFERES CON MAYORES VIAJES POR AÑO:
+
+http://localhost:5140/api/sp_ObtenerChoferesConMayorViajesPorAño?a%C3%B1o=2024
+
+***OBTENER INGRESOS POR RUTA Y AÑO:
+
+http://localhost:5140/api/sp_ObtenerIngresosPorRutaYAño?a%C3%B1o=2024

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PrjCLIENTE_FINAL_HERRAMIENTAS.props" />
+</Project>

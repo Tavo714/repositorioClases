@@ -1,0 +1,34 @@
+<h4>{{title}}</h4>
+
+<form [formGroup]="detalleForm" (ngSubmit)="onDetalleEditSubmit()">
+
+  <div class="row">
+    
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Cliente</mat-label>
+      <input matInput formControlName="cliente" required />
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Producto</mat-label>
+      <input matInput formControlName="producto" required/>
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Cantidad</mat-label>
+      <input matInput type="number" formControlName="cantidad" required/>
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Precio</mat-label>
+      <input matInput type="number" formControlName="precio" required/>
+    </mat-form-field>
+
+    
+  </div>
+  <div class="d-flex justify-content-end">
+    <button class="m-2" mat-button [routerLink]="['/details']">Cancelar</button>
+    <button type="submit" class="mt-2 mb-2" mat-flat-button>Actualizar</button>
+  </div>
+</form>

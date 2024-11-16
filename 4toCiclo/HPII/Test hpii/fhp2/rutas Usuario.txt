@@ -1,0 +1,15 @@
+CRUD:
+
+Listado:
+http://localhost:5064/api/Usuario/GetUsuarios
+
+Buscar:
+http://localhost:5064/api/Usuario/GetUsuario7
+
+Post:
+http://localhost:5064/api/Usuario/PostUsuario
+
+Put: FALTA ARREGLAR.
+
+Delete:
+http://localhost:5064/api/Usuario/DeleteUsuario/27

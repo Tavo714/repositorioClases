@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF0E1991-ECB7-4EC3-B9F0-0E217B2D4FA6}|PrjCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS.csproj|d:\\gitrepositories\\final_herramientas\\slncliente_final_herramientas\\prjcliente_final_herramientas\\models\\pasajero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0E1991-ECB7-4EC3-B9F0-0E217B2D4FA6}|PrjCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS.csproj|solutionrelative:prjcliente_final_herramientas\\models\\pasajero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF0E1991-ECB7-4EC3-B9F0-0E217B2D4FA6}|PrjCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS.csproj|d:\\gitrepositories\\final_herramientas\\slncliente_final_herramientas\\prjcliente_final_herramientas\\controllers\\pasajerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF0E1991-ECB7-4EC3-B9F0-0E217B2D4FA6}|PrjCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS.csproj|solutionrelative:prjcliente_final_herramientas\\controllers\\pasajerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF0E1991-ECB7-4EC3-B9F0-0E217B2D4FA6}|PrjCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS.csproj|d:\\gitrepositories\\final_herramientas\\slncliente_final_herramientas\\prjcliente_final_herramientas\\views\\pasajero\\indexpasajero.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF0E1991-ECB7-4EC3-B9F0-0E217B2D4FA6}|PrjCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS.csproj|solutionrelative:prjcliente_final_herramientas\\views\\pasajero\\indexpasajero.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pasajero.cs",
+              "DocumentMoniker": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS\\Models\\Pasajero.cs",
+              "RelativeDocumentMoniker": "PrjCLIENTE_FINAL_HERRAMIENTAS\\Models\\Pasajero.cs",
+              "ToolTip": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS\\Models\\Pasajero.cs",
+              "RelativeToolTip": "PrjCLIENTE_FINAL_HERRAMIENTAS\\Models\\Pasajero.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T18:14:22.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexPasajero.cshtml",
+              "DocumentMoniker": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS\\Views\\Pasajero\\IndexPasajero.cshtml",
+              "RelativeDocumentMoniker": "PrjCLIENTE_FINAL_HERRAMIENTAS\\Views\\Pasajero\\IndexPasajero.cshtml",
+              "ToolTip": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS\\Views\\Pasajero\\IndexPasajero.cshtml",
+              "RelativeToolTip": "PrjCLIENTE_FINAL_HERRAMIENTAS\\Views\\Pasajero\\IndexPasajero.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAEwCkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T18:19:11.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasajeroController.cs",
+              "DocumentMoniker": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS\\Controllers\\PasajeroController.cs",
+              "RelativeDocumentMoniker": "PrjCLIENTE_FINAL_HERRAMIENTAS\\Controllers\\PasajeroController.cs",
+              "ToolTip": "D:\\GITrepositories\\FINAL_HERRAMIENTAS\\SlnCLIENTE_FINAL_HERRAMIENTAS\\PrjCLIENTE_FINAL_HERRAMIENTAS\\Controllers\\PasajeroController.cs",
+              "RelativeToolTip": "PrjCLIENTE_FINAL_HERRAMIENTAS\\Controllers\\PasajeroController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T17:51:59.795Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

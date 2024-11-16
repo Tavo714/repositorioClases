@@ -1,0 +1,6 @@
+@PrjFinalHp2_HostAddress = http://localhost:5064
+
+GET {{PrjFinalHp2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

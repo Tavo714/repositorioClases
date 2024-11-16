@@ -1,0 +1,91 @@
+﻿@model IEnumerable<PrjClienteFinalHerramientas.Models.Usuario>
+
+@{
+    ViewData["Title"] = "IndexUsuario";
+}
+
+<h1>IndexUsuario</h1>
+
+@if(TempData["mensaje"]!=null){
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<br/>
+
+<p>
+    <a asp-action="CreateUsuario">Nuevo Usuario</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DistritoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Penalidad)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DistritoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Penalidad)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditUsuario", new { id=item.UsuarioId }) |
+                @Html.ActionLink("Detalle", "DetailsUsuario", new { id=item.UsuarioId }) |
+                @Html.ActionLink("Eliminar", "DeleteUsuario", new { id=item.UsuarioId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

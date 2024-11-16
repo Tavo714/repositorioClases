@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://idat.com/sw"
+xmlns:tns="http://idat.com/sw"
+elementFormDefault="qualified">
+
+<!--Componente de Servicio Buscar Producto-->
+
+<!--element name="BuscarProductoRequest"-->
+<element name="BuscarEscuelaRequest">
+    <complexType>
+        <sequence>
+            <element name="codigo" type="int"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--element name="BuscarProductoResponse"-->
+<element name="BuscarEscuelaResponse">
+    <complexType>
+        <sequence>
+            <element name="escuela" type="tns:escuela"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del Componente-->
+
+<!--Estructura de Datos Producto-->
+
+<complexType name="escuela">
+    <sequence>
+        <!--Tienen que coincidir con el nombre de la tabla-->
+        <element name="codesc" type="int"></element> 
+        <element name="desesc" type="string"></element>
+        <element name="codfac" type="int"></element>
+        <element name="ubiesc" type="string"></element>
+    </sequence>
+</complexType>
+
+<!--Fin de la Estructura Producto-->
+
+<!--Componente de Servicio Guardar Producto-->
+
+<!--element name="GuardarProductoRequest"-->
+<element name="GuardarEscuelaRequest">
+    <complexType>
+        <sequence>
+            <element name="codesc" type="int"></element> 
+            <element name="desesc" type="string"></element>
+            <element name="codfac" type="int"></element>
+            <element name="ubiesc" type="string"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--element name="GuardarProductoResponse"-->
+<element name="GuardarEscuelaResponse">
+    <complexType>
+        <sequence>
+            <element name="estado" type="tns:estado"></element>
+            <element name="escuela" type="tns:escuela"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del proceso Guardar Producto-->
+
+<!--Estructura de la variable Estado-->
+
+<complexType name="estado">
+    <sequence>
+        <element name="codigo" type="string"></element>
+        <element name="mensaje" type="string"></element>
+    </sequence>
+</complexType>
+
+<!--Fin de la Estructura Estado-->
+
+<!--Componente de Servicio Listar Productos-->
+
+<element name="ListarEscuelasRequest">
+    <complexType>
+    </complexType>
+</element>
+
+<element name="ListarEscuelasResponse">
+    <complexType>
+        <sequence>
+            <element name="escuela" type="tns:escuela" maxOccurs="unbounded"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin de Listar-->
+
+<!--Componente de Servicio Eliminar Producto-->
+
+<element name="EliminarEscuelaRequest">
+    <complexType>
+        <sequence>
+            <element name="codfac" type="int"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<element name="EliminarEscuelaResponse">
+    <complexType>
+        <sequence>
+            <element name="estado" type="tns:estado"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del proceso Eliminar-->
+
+</schema>

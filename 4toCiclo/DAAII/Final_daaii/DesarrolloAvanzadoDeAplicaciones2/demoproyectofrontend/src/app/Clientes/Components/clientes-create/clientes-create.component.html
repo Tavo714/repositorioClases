@@ -1,0 +1,60 @@
+<div class="pt-4">
+  <mat-card class="container cliente-card">
+    <mat-card-title>
+      <h4>{{ title }}</h4>
+    </mat-card-title>
+
+    <mat-card-content>
+      <form [formGroup]="clientesForm" (ngSubmit)="onClienteCreateSubmit()">
+        <div class="row">
+          <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+            <mat-label>Nombres</mat-label>
+            <input matInput placeholder="Ronaldo Juan" formControlName="nombreCliente" required />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+            <mat-label>Direccion</mat-label>
+            <input matInput placeholder="AV 999 San Juan" formControlName="direccion" required />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Jperez" formControlName="usuario" required />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+            <mat-label>Clave</mat-label>
+
+            <input placeholder="perez1234" matInput [type]="hide() ? 'password' : 'text'" formControlName="clave"
+              required />
+            <button mat-icon-button matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide()">
+              <mat-icon>{{
+                hide() ? "visibility_off" : "visibility"
+                }}</mat-icon>
+            </button>
+          </mat-form-field>
+
+          <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="correo.electronico@contoso.com" formControlName="email" required />
+          </mat-form-field>
+
+          <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+            <mat-label>Nro Telefono</mat-label>
+            <input matInput [type]="'tel'" placeholder="Ingrese el numero de telefono" formControlName="telefono"
+              required />
+          </mat-form-field>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="m-2" mat-button [routerLink]="['/clients']">
+            Cancelar
+          </button>
+          <button type="submit" class="mt-2 mb-2" mat-flat-button>
+            Registrar Cliente
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

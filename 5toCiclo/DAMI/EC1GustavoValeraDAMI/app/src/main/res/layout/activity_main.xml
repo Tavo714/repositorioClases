@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/tvBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenidos a la app de compras"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese sus nombres y apellidos"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBienvenida" />
+
+    <EditText
+        android:id="@+id/etDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su DNI"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombres" />
+
+    <!-- Primer Producto y Precio -->
+    <EditText
+        android:id="@+id/etProducto1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Primer Producto"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDni"
+        app:layout_constraintEnd_toStartOf="@+id/etPrecioProducto1"/>
+
+    <EditText
+        android:id="@+id/etPrecioProducto1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/etDni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etProducto1" />
+
+    <!-- Segundo Producto y Precio -->
+    <EditText
+        android:id="@+id/etProducto2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Segundo Producto"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProducto1"
+        app:layout_constraintEnd_toStartOf="@+id/etPrecioProducto2"/>
+
+    <EditText
+        android:id="@+id/etPrecioProducto2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/etProducto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etProducto2" />
+
+    <!-- Tercer Producto y Precio -->
+    <EditText
+        android:id="@+id/etProducto3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tercer Producto"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProducto2"
+        app:layout_constraintEnd_toStartOf="@+id/etPrecioProducto3"/>
+
+    <EditText
+        android:id="@+id/etPrecioProducto3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintTop_toBottomOf="@+id/etProducto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etProducto3" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProducto3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

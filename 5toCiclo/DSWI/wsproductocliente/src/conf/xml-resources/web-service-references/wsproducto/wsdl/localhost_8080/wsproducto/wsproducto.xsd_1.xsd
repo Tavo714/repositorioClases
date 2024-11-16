@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://wsproducto/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wsproducto/">
+
+<xs:element name="wscalcprecio" type="tns:wscalcprecio" />
+
+<xs:element name="wscalcprecioResponse" type="tns:wscalcprecioResponse" />
+
+<xs:complexType name="wscalcprecio">
+<xs:sequence>
+<xs:element name="articulo" type="xs:string" minOccurs="0" />
+<xs:element name="precioCompra" type="xs:double" />
+<xs:element name="linea" type="xs:string" minOccurs="0" />
+<xs:element name="servAdicional" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="wscalcprecioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

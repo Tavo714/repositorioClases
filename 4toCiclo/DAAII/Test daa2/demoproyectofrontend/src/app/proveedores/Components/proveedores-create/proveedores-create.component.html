@@ -1,0 +1,41 @@
+<h4>{{title}}</h4>
+
+<form [formGroup]="proveedoresForm" (ngSubmit)="onProveedoresCreateSubmit()">
+
+  <div class="row">
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Nombres</mat-label>
+      <input matInput placeholder="Ronaldo Juan" formControlName="nombreProveedor" required />
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Direccion</mat-label>
+      <input matInput placeholder="AV 999 San Juan"  formControlName="direccion" required/>
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Usuario</mat-label>
+      <input matInput placeholder="Jperez"  formControlName="usuario" required/>
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Clave</mat-label>
+      <input matInput type="password" placeholder="perez1234"  formControlName="clave" required/>
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="correo.electronico@contoso.com" formControlName="email" required />
+    </mat-form-field>
+    
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Nro Telefono</mat-label>
+      <input matInput [type]="'tel'" placeholder="Ingrese el numero de telefono"  formControlName="telefono" required/>
+    </mat-form-field>
+
+  </div>
+  <div class="d-flex justify-content-end">
+    <button class="m-2" mat-button [routerLink]="['/proveedores']">Cancelar</button>
+    <button type="submit" class="mt-2 mb-2" mat-flat-button>Registrar Cliente</button>
+  </div>
+</form>

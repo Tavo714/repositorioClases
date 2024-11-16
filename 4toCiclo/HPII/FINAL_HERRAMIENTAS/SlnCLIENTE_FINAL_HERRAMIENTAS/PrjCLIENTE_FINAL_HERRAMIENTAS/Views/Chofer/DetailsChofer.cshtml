@@ -1,0 +1,54 @@
+﻿@model PrjCLIENTE_FINAL_HERRAMIENTAS.Models.Chofer
+
+@{
+    ViewData["Title"] = "DetailsChofer";
+}
+
+<h1>DetailsChofer</h1>
+
+<div>
+    <h4>Chofer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CodChof)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CodChof)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomChof)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomChof)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FecIng)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FecIng)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CodCat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CodCat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SdoBas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SdoBas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Eliminado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Eliminado)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Actualizar", "EditChofer", new { id = Model.CodChof }) |
+    <a asp-action="IndexChofer">Regresar</a>
+</div>

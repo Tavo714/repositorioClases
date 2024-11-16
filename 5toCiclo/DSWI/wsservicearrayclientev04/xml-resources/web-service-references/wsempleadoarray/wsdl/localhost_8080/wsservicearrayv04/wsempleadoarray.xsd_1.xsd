@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="lista" type="tns:lista" />
+
+<xs:element name="listaResponse" type="tns:listaResponse" />
+
+<xs:complexType name="lista">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:empleado" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="empleado">
+<xs:sequence>
+<xs:element name="fecha_contrato" type="xs:dateTime" minOccurs="0" />
+<xs:element name="id_empleado" type="xs:int" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="profesion" type="xs:string" minOccurs="0" />
+<xs:element name="sueldo" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

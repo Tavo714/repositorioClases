@@ -1,0 +1,66 @@
+﻿@model IEnumerable<PrjClienteFinalHerramientas.Models.Prestamo>
+
+@{
+    ViewData["Title"] = "IndexPrestamo";
+}
+
+<h1>IndexPrestamo</h1>
+
+@if(TempData["mensaje"]!=null){
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<p>
+    <a asp-action="CreatePrestamo" class="btn btn-info">Nuevo Prestamo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PrestamoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LibroId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TiempoPrestamo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrestamoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UsuarioId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LibroId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TiempoPrestamo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditPrestamo", new { id=item.PrestamoId }) |
+                @Html.ActionLink("Detalle", "DetailsPrestamo", new { id=item.PrestamoId }) |
+                @Html.ActionLink("Eliminar", "DeletePrestamo", new { id=item.PrestamoId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

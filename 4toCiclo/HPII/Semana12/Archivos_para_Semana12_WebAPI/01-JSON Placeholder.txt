@@ -1,0 +1,10 @@
+https://jsonplaceholder.typicode.com
+
+Listar Todos los Posts
+https://jsonplaceholder.typicode.com/posts
+
+Listar Todos los Posts de acuerdo a un ID de Usuario
+https://jsonplaceholder.typicode.com/posts?userId=4
+
+Listar Todos los Usuarios 
+https://jsonplaceholder.typicode.com/users

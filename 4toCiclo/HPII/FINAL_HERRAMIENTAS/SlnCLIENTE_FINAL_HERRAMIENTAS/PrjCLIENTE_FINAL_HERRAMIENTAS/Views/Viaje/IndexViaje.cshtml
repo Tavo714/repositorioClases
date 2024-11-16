@@ -1,0 +1,82 @@
+﻿@model IEnumerable<PrjCLIENTE_FINAL_HERRAMIENTAS.Models.Viaje>
+
+@{
+    ViewData["Title"] = "IndexViaje";
+}
+
+<h1>IndexViaje</h1>
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<br/>
+
+<p>
+    <a asp-action="CreateViaje">Nuevo Viaje</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NroVia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NroBus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodRut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodChof)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FecVia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoVia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eliminado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NroVia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NroBus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodRut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodChof)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FecVia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoVia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eliminado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditViaje", 
+                                new { id=item.NroVia }) |
+                @Html.ActionLink("Detalle", "DetailsViaje", 
+                                new { id=item.NroVia }) |
+                @Html.ActionLink("Eliminar", "DeleteViaje", 
+                                new { id=item.NroVia })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

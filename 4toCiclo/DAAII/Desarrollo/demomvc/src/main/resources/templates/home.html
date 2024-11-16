@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://thymeleaf.org"> <!--Se agrega xmlns con la url-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${siteTitle}">Document</title>
+    <!--Primera linea para trabajar con bootstrap. Se copia del punto 2 de introduccion-->
+    <!--Para que los links funcionen con thymeleaf es necesario usar el @{url}-->
+    <!--El link se pasa al HomeController como un nuevo atributo y se invoca con el nombre de la variable y ${}-->
+    <link th:href="${cdnBootstrap}" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-sm-center">
+    <h1 th:text="${welcomeMessage}">Bienvenidos a Campus IDAT</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <p th:text="${siteContent}"></p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <p th:text="${siteContent}"></p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <p th:text="${siteContent}"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-sm-center">
+    <div class="card" style="width: 23rem;">
+        <div class="card-body">
+          <h5 class="card-title" th:text="${user.name} + ' ' + ${user.lastname}">Dummy</h5>
+          <div class="container">
+            <div class="row">
+                <p class="col-4 card-text"><b>DNI:</b></p>
+                <p class="col-8 card-text" th:text="${user.nid}"></p>
+          </div>
+          <div class="row">
+            <p class="col-4 card-text"><b>Telefono:</b></p>
+            <p class="col-8 card-text" th:text="${user.phoneNumber}"></p>
+      </div>
+        </div>
+          
+          <a href="#" class="btn btn-primary">Ver CV</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!--Segunda linea para trabajar con bootstrap. Con ambas lineas, ya se puede trabajar-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>

@@ -1,0 +1,73 @@
+-- Parte 02
+
+
+-- crear la cadena de conexión en el archivo appsettings.json
+
+{
+  "ConnectionStrings": {
+    "cn1": "server=localhost;database=Neptuno2023;integrated security=true;Trust Server Certificate=false;Encrypt=false;" 
+  },
+  "Logging": {
+....
+}
+
+-- Luego debemos registrar el contexto como un servicio en el archivo program.cs
+-- pero primero importaremos las siguientes librerias
+
+using ProyectoAspNetCoreMVC.Models;
+using Microsoft.EntityFrameworkCore;
+
+
+-- luego debajo de:
+var builder = WebApplication.CreateBuilder(args);
+// Add services to the container.
+
+-- agregaremos:
+
+var cadena = builder.Configuration.GetConnectionString("cn1");
+
+// registrando el contexto del EF Core en la aplicación y que utilice
+// la cadena de conexión
+builder.Services.AddDbContext<Neptuno2023Context>(
+    opt=>opt.UseSqlServer(cadena));
+
+//builder.Services.AddCors();
+
+
+-- finalmente debajo de:
+
+var app = builder.Build();
+
+-- agregaremos:
+
+/*
+// Permitir que React acceda al servicio web api por medio de:
+// http://localhost_3000
+app.UseCors(
+    opt =>
+    {
+        opt.AllowAnyHeader();
+        opt.AllowAnyMethod();
+        opt.AllowAnyOrigin();
+        //opt.WithOrigins("http://localhost_3000");
+    });
+*/
+
+
+Luego en el controlador WebAPI: NeptunoAPIController, primero importaremos las librerias:
+
+using ProyectoAspNetCoreMVC.Models;
+using Microsoft.EntityFrameworkCore;
+
+definimos una variable de sólo lectura sobre el EntityFrameworkCore
+
+private readonly Neptuno2023Context ctx;
+
+Y creamos un constructor que reciba el EntityFrameworkCore y lo asignamos
+
+public NeptunoAPIController(Neptuno2023Context _ctx)
+{
+    ctx = _ctx;
+}
+
+Ahora ya podemos utilizar en cualquier ActionResult la variable del contexto del EntityFrameworkCore

@@ -1,0 +1,86 @@
+<h3>{{title}}</h3>
+
+<div class="row">
+    <mat-form-field class="col-12">
+        <mat-label>Filtro de Busqueda</mat-label>
+        <input matInput 
+            placeholder="Realice su busqueda por nombre, apellidos, entre otros datos" #input>
+    </mat-form-field>
+
+    <mat-form-field class="col-12">
+        <mat-label>Seleccione Cliente</mat-label>
+        <mat-select [(ngModel)]="selectedCliente" (selectionChange)="onClienteChange($event.value)">
+            <mat-option [value] = 0>
+                Seleccione
+            </mat-option>
+            <mat-option *ngFor="let cliente of clientes" [value]="cliente.clienteId">
+                {{ cliente.nombreCliente }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort matSortActive="id" matSortDirection="asc" matSortDisableClear>
+
+
+            <!-- Pedido ID Column -->
+            <ng-container matColumnDef="pedido">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> ID Pedido </th>
+                <td mat-cell *matCellDef="let element"> {{element.pedido.pedidoId}} </td>
+            </ng-container>
+
+            <!-- Cliente Column -->
+            <ng-container matColumnDef="cliente">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Cliente </th>
+                <td mat-cell *matCellDef="let element"> {{element.pedido.cliente.nombreCliente}} </td>
+            </ng-container>
+        
+            <!-- Producto Column -->
+            <ng-container matColumnDef="producto">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Producto </th>
+                <td mat-cell *matCellDef="let element"> {{element.producto.nombreProducto}} </td>
+            </ng-container>
+        
+            <!-- Cantidad Column -->
+            <ng-container matColumnDef="cantidad">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Cantidad </th>
+                <td mat-cell *matCellDef="let element"> {{element.cantidad}} </td>
+            </ng-container>
+        
+            <!-- Precio Column -->
+            <ng-container matColumnDef="precioUnitario">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Precio </th>
+                <td mat-cell *matCellDef="let element"> {{element.precioUnitario}} </td>
+            </ng-container>
+        
+            <!-- Actions Column -->
+            <ng-container matColumnDef="actions">
+                <th mat-header-cell *matHeaderCellDef> Acciones </th>
+                <td mat-cell *matCellDef="let element">
+                    <div>
+                        
+                        <button mat-icon-button aria-label="Editar Detalle" (click)="editDetalle(element)">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                        
+
+                        <button mat-icon-button aria-label="Eliminar Detalle" (click)="deleteDetalle(element)">
+                            <mat-icon color="primary">delete</mat-icon>
+                        </button>      
+                    </div>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            
+            <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">No existe informacion con el valor "{{input.value}}"</td>
+            </tr>
+        </table>
+
+        <mat-paginator [length]="totalItems" [pageSizeOptions]="[5, 10, 25, 100]"
+            aria-label="Seleccionar pagina de detalles"></mat-paginator>
+    </div>
+</div>

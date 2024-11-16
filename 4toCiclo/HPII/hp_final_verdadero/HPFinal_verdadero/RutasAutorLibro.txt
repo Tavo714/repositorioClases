@@ -1,0 +1,74 @@
+Autores:
+http://localhost:5196/api/Autore/GetAutores
+http://localhost:5196/api/Autore/GetAutor/{id}
+http://localhost:5196/api/Autore/PostAutor
+JSON:
+{
+  
+  "nombre": "Rosas Ortiz Gabriel",
+  "nacionalidad": "Peruano",
+  "fechaNacimiento": "2006-02-06",
+  "estado": "Activo",
+  "libros": []
+  
+}
+
+http://localhost:5196/api/Autore/PutAutor
+{
+  "autorId": {id},
+  "nombre": "Rosas Ortiz Gabriel",
+  "nacionalidad": "Peruano",
+  "fechaNacimiento": "2006-02-08",
+  "estado": "Activo",
+  "libros": []
+  
+}
+http://localhost:5196/api/Autore/DeleteAutor/{id}
+
+Libros:
+http://localhost:5196/api/Libro/GetLibros
+http://localhost:5196/api/Libro/GetLibro/{id}
+http://localhost:5196/api/Libro/PostLibro
+JSON:
+{
+  
+  "titulo": "El otoño del patriarca",
+  "añoPublicacion": 1975,
+  "autorId": 1,
+  "stock": 5,
+  "estado": "Activo",
+  "autor": null,
+  "prestamos": []
+}
+http://localhost:5196/api/Libro/PutLibro
+JSON
+{
+  "libroId": 27,
+  "titulo": "El amor en los tiempos del cólera",
+  "añoPublicacion": 1985,
+  "autorId": 1,
+  "stock": 15,
+  "estado": "Activo",
+  "autor": null,
+  "prestamos": []
+}
+
+http://localhost:5196/api/Libro/DeleteLibro/{id}
+
+
+Procedimientos Almacenados:
+
+http://localhost:5196/api/Libro/GetLibrosNoDevueltos
+JSON:
+{
+    "prestamoID": 1,
+    "usuarioID": 1,
+    "usuarioNombre": "Carlos Pérez",
+    "libroID": 1,
+    "libroTitulo": "Cien Años de Soledad",
+    "fechaPrestamo": "2024-01-01",
+    "fechaDevolucion": null
+}
+
+http://localhost:5196/api/Libro/PutRegistrarDevolucionLibro/{id}
+

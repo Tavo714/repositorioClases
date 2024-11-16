@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PrjFinalHp2.props" />
+</Project>

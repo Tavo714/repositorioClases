@@ -1,0 +1,22 @@
+Herramientas / Administrador de paquetes NuGet
+Administrar paquetes NuGet para la Solucion
+
+En Examinar colocar:
+                                           SDK =>  8.0
+Microsoft.EntityFrameworkCore.SqlServer    -- > 8.0.7
+
+Microsoft.EntityFrameworkCore.Tools         --> 8.0.7
+
+-- ingenieria de reversa para crear las clases desde la BD de SQL Server
+Herramientas / Administrador de paquetes NuGet
+Consola del Administrador de Paquetes
+
+PM>
+-- Autenticación de SQL Server
+Scaffold-DbContext "Data Source=localhost;Initial Catalog=Neptuno2023;User ID=sa;Password=sql;Trust Server Certificate=false;Encrypt=false;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+-- Autenticación de Windows
+Scaffold-DbContext "server=localhost;database=Neptuno2023;integrated security=true;Trust Server Certificate=false;Encrypt=false;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+

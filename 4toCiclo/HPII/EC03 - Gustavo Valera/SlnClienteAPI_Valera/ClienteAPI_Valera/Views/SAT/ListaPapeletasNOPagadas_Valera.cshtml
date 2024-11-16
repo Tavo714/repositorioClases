@@ -1,0 +1,92 @@
+﻿@model IEnumerable<ClienteAPI_Valera.Models.ListarPapeletasNoPagadasPorDNI>
+
+@{
+    ViewData["Title"] = "ListaPapeletasNOPagadas_Valera";
+}
+
+<h1>ListaPapeletasNOPagadas_Valera</h1>
+<br/>
+
+
+    <div>
+    PAPELETAS NO PAGADAS DE:  <b>@ViewBag.Propietario</b>
+</div>
+<br/>
+
+@if (!string.IsNullOrEmpty(ViewBag.Mensaje))
+{
+    <div class="alert alert-success">
+        La papeleta @ViewBag.PapeletaId fue pagada el @ViewBag.FechaPago Exitosamente!.
+    </div>
+}
+
+<form method="get" asp-action="ListaPapeletasNOPagadas_Valera">
+    <input type="hidden" name="dni" value="@ViewBag.DNI" />
+    
+</form>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NROPAP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NROPLA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DESINF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PAPFECHA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IMPORTE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PAGADO)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NROPAP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NROPLA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DESINF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PAPFECHA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IMPORTE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PAGADO)
+            </td>
+            <td>
+                    @Html.ActionLink("Pagar", "MarcarPapeletaComoPagada", new { id = item.NROPAP })
+
+            </td>
+        </tr>
+        
+}
+    </tbody>
+</table>
+<div>
+    <b>Cantidad de Papeletas: @ViewBag.TotalPapeletas</b>
+   <br/>
+    <b>Importe: @ViewBag.SumaMontos</b>
+</div>
+<br/>
+<div>
+    <a asp-action="ListaPropietarios_Valera" class="btn btn-warning">Regresar</a>
+</div>

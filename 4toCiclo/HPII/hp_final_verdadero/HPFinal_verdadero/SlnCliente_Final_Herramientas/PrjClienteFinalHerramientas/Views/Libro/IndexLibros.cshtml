@@ -1,0 +1,76 @@
+﻿@model IEnumerable<PrjClienteFinalHerramientas.Models.Libro>
+
+@{
+    ViewData["Title"] = "IndexLibros";
+}
+
+<h1>Listado de Libros</h1>
+
+<p>
+    <a asp-action="CreateLibro">Agregar</a>
+    <a asp-controller="ListarLibrosNoDevueltos" asp-action="ListarLibrosNoDevueltos" class="btn btn-info">Consulta1</a>
+</p>
+
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["mensaje"]!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<div class="table-responsive pt-4">
+        <table class="table table-striped table-bordered border-primary">
+            <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.LibroId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AñoPublicacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Autor!.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Stock) 
+                </th>
+                
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LibroId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titulo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AñoPublicacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Autor!.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stock) unidades
+                </td>
+                
+                <td>
+                        @Html.ActionLink("Editar", "EditLibro", new {  id=item.LibroId  }) |
+                        @Html.ActionLink("Detalles", "DetailsLibro", new { id = item.LibroId }) |
+                        @Html.ActionLink("Eliminar", "DeleteLibro", new { id = item.LibroId }) |
+                        
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
+    <div>
+        <p>Cantidad de Libros: <strong>@Model.Count()</strong></p>
+    </div>

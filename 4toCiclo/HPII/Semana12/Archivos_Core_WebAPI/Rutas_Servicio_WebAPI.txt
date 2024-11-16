@@ -1,0 +1,9 @@
+https://localhost:7141/api/NeptunoAPI/GetCategorias
+
+https://localhost:7141/api/NeptunoAPI/GetClientes
+
+https://localhost:7141/api/NeptunoAPI/GetEmpleados
+
+https://localhost:7141/api/NeptunoAPI/GetPedidosEmp/1
+
+https://localhost:7141/api/NeptunoAPI/GetPedidosClienteAnio/BERGS/2022

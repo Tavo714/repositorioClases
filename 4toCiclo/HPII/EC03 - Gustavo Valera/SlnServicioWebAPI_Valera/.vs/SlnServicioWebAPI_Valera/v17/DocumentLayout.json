@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\controllers\\propietarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\controllers\\propietarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\models\\listarpapeletasnopagadaspordni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\models\\listarpapeletasnopagadaspordni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\models\\listarpropietariosporinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\models\\listarpropietariosporinicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\models\\actualizarpapeletaapagada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\models\\actualizarpapeletaapagada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\models\\bdtransito2024context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\models\\bdtransito2024context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|d:\\idat iv - 2024\\herramientas de programaci\u00F3n ii\\ec03 - gustavo valera\\slnserviciowebapi_valera\\serviciowebapi_valera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63DE0984-E6F1-42C5-A685-1F87539DD906}|ServicioWebAPI_Valera\\ServicioWebAPI_Valera.csproj|solutionrelative:serviciowebapi_valera\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActualizarPapeletaAPagada.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\Models\\ActualizarPapeletaAPagada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T09:04:00.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListarPapeletasNoPagadasPorDNI.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\Models\\ListarPapeletasNoPagadasPorDNI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T09:02:08.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListarPropietariosPorInicial.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\Models\\ListarPropietariosPorInicial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T09:00:28.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PropietariosController.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Controllers\\PropietariosController.cs",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\Controllers\\PropietariosController.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Controllers\\PropietariosController.cs",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\Controllers\\PropietariosController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAUwGwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T08:41:08.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Program.cs",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\Program.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Program.cs",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T08:36:56.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\appsettings.json",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\appsettings.json",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\appsettings.json",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-28T08:36:18.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bdtransito2024Context.cs",
+              "DocumentMoniker": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\Bdtransito2024Context.cs",
+              "RelativeDocumentMoniker": "ServicioWebAPI_Valera\\Models\\Bdtransito2024Context.cs",
+              "ToolTip": "D:\\IDAT IV - 2024\\Herramientas de Programaci\u00F3n II\\EC03 - Gustavo Valera\\SlnServicioWebAPI_Valera\\ServicioWebAPI_Valera\\Models\\Bdtransito2024Context.cs",
+              "RelativeToolTip": "ServicioWebAPI_Valera\\Models\\Bdtransito2024Context.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwCAAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T08:34:51.058Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

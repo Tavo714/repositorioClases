@@ -1,0 +1,99 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PrjCLIENTE_FINAL_HERRAMIENTAS
+build_property.RootNamespace = PrjCLIENTE_FINAL_HERRAMIENTAS
+build_property.ProjectDir = D:\GITrepositories\FINAL_HERRAMIENTAS\SlnCLIENTE_FINAL_HERRAMIENTAS\PrjCLIENTE_FINAL_HERRAMIENTAS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\GITrepositories\FINAL_HERRAMIENTAS\SlnCLIENTE_FINAL_HERRAMIENTAS\PrjCLIENTE_FINAL_HERRAMIENTAS
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Chofer/CreateChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hvZmVyXENyZWF0ZUNob2Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Chofer/DeleteChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hvZmVyXERlbGV0ZUNob2Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Chofer/DetailsChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hvZmVyXERldGFpbHNDaG9mZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Chofer/EditChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hvZmVyXEVkaXRDaG9mZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Chofer/IndexChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hvZmVyXEluZGV4Q2hvZmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Pasajero/IndexPasajero.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYWplcm9cSW5kZXhQYXNhamVyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Viaje/CreateViaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhamVcQ3JlYXRlVmlhamUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Viaje/DeleteViaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhamVcRGVsZXRlVmlhamUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Viaje/DetailsViaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhamVcRGV0YWlsc1ZpYWplLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Viaje/EditViaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhamVcRWRpdFZpYWplLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Viaje/IndexViaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlhamVcSW5kZXhWaWFqZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/GITrepositories/FINAL_HERRAMIENTAS/SlnCLIENTE_FINAL_HERRAMIENTAS/PrjCLIENTE_FINAL_HERRAMIENTAS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pj0mpae7qy

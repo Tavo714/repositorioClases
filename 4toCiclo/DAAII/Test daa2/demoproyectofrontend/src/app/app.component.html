@@ -1,0 +1,60 @@
+<mat-toolbar class="justify-content-between mat-elevation-z8">
+  <button mat-icon-button class="menu" aria-label="menu" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>{{title}}</span>
+  <div>
+
+    <button mat-icon-button [matMenuTriggerFor]="userMenu" class="cuenta" aria-label="cuenta">
+      <mat-card-header>
+        <div mat-card-avatar class="header-usuario user-avatar"></div>
+      </mat-card-header>
+    </button>
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item (click)="redirectTo('settings')">
+        <mat-icon>settings</mat-icon>
+        Opciones
+      </button>
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>exit_to_app</mat-icon>
+        Salir
+      </button>
+      <button mat-menu-item (click)="redirectTo('login')">
+        <mat-icon>login</mat-icon>
+        Login
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
+
+<hr>
+
+<mat-drawer-container class="master-container" autosize>
+  <mat-drawer #drawer mode="side">
+      <mat-selection-list>
+          <div mat-subheader>Menu</div>
+          @for (item of menu; track item) {
+            <mat-list-item (click)="redirectTo(item.path)" >
+              <mat-icon matListItemIcon >{{item.icon}}</mat-icon>
+              <div matListItemTitle>{{item.name}}</div>
+            </mat-list-item>
+          }
+        </mat-selection-list>
+
+      @if (showFiller) {
+      <p>hola</p>
+      }
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+          Herramientas extra
+      </button>
+
+  </mat-drawer>
+  
+  <div>
+      <router-outlet />
+  </div>
+
+</mat-drawer-container>
+
+ 

@@ -1,0 +1,10 @@
+Procedimientos Almacenados:
+1. Listar usuarios con penalidades por pagar.
+2. Pagar penalidades
+3. Buscar usuarios con libros por devolver.
+4. Devolver libros
+5. Buscar usuarios por dni y que liste los libros que tiene prestados y si 
+   tiene penalidad o no.
+6. Buscar libros por autor, indicar si hay stock o no y, si lo hay, hacer prestamo.
+7. A la hora de hacer prestamo, revisar si el usuario tiene penalidades o no y, 
+   de tenerlas, enviar a pagar penalidad antes de hacer nuevo prestamo.

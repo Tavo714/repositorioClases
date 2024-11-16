@@ -1,0 +1,20 @@
+***CRUD
+
+http://localhost:5298/api/Propietarios/GetPropietarios
+
+http://localhost:5298/api/Propietarios/GetPropietario/10529724
+
+http://localhost:5298/api/Propietarios/PostPropietario
+
+http://localhost:5298/api/Propietarios/PutPropietario
+
+http://localhost:5298/api/Propietarios/DeletePropietario/99999998
+
+
+***PROCEDIMIENTOS ALMACENADOS
+
+http://localhost:5298/api/Propietarios/GetListarPropietariosPorInicial/a
+
+http://localhost:5298/api/Propietarios/GetListarPapeletasNoPagadasPorDNI/12345678
+
+http://localhost:5298/api/Propietarios/PutActualizarPapeletaAPagada/100003

@@ -1,0 +1,5 @@
+El front no me dejo mandarlo como archivo, solo lo comprimi.
+Recuerda instalar el npm i
+Y realiza tus modificaciones. 
+Lo malo de esto sera que el front si debemos estar los dos 
+para no quemar el tuyo o el mio en el proceso de avance

@@ -1,0 +1,60 @@
+﻿@model PrjCLIENTE_FINAL_HERRAMIENTAS.Models.Viaje
+
+@{
+    ViewData["Title"] = "EditViaje";
+}
+
+<h1>EditViaje</h1>
+
+<h4>Viaje</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditViaje">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NroVia" class="control-label"></label>
+                <input asp-for="NroVia" class="form-control" />
+                <span asp-validation-for="NroVia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NroBus" class="control-label"></label>
+                <input asp-for="NroBus" class="form-control" />
+                <span asp-validation-for="NroBus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodRut" class="control-label"></label>
+                <input asp-for="CodRut" class="form-control" />
+                <span asp-validation-for="CodRut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodChof" class="control-label"></label>
+                <input asp-for="CodChof" class="form-control" />
+                <span asp-validation-for="CodChof" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FecVia" class="control-label"></label>
+                <input asp-for="FecVia" class="form-control" />
+                <span asp-validation-for="FecVia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CostoVia" class="control-label"></label>
+                <input asp-for="CostoVia" class="form-control" />
+                <span asp-validation-for="CostoVia" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value="Actualizar" class="btn btn-primary" /> |
+                <a asp-action="IndexViaje">Regresar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <b>@ViewBag.mensaje</b>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

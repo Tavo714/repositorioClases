@@ -1,0 +1,48 @@
+﻿@model ClienteAPI_Valera.Models.Propietario
+
+@{
+    ViewData["Title"] = "DeletePropietario";
+}
+
+<h1>DeletePropietario</h1>
+
+<h3>Estas seguro de Eliminar este Propietario?</h3>
+<div>
+    <h4>Propietario</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dnipro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dnipro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nompro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nompro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Distrito)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Distrito)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Eliminado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Eliminado)
+        </dd>
+    </dl>
+    
+    <form asp-action="DeletePropietario">
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="IndexPropietario" class="btn btn-warning">Regresar</a>
+    </form>
+</div>
+</<br/>
+<div>
+    <b>@ViewBag.mensaje</b>
+</div>

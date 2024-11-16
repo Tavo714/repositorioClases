@@ -1,0 +1,31 @@
+<h4>{{title}}</h4>
+
+<form [formGroup]="productosForm" (ngSubmit)="onProductosCreateSubmit()">
+
+  <div class="row">
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Producto</mat-label>
+      <input matInput placeholder="Ingrese nombre del producto..." formControlName="nombreProducto" required />
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Descripcion</mat-label>
+      <input matInput placeholder="Ingrese descripcion del producto..."  formControlName="descripcion" required/>
+    </mat-form-field>
+
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Precio</mat-label>
+      <input matInput [type]="'number'" placeholder="Ingrese precio del producto..."  formControlName="precio" required />
+    </mat-form-field>
+    
+    <mat-form-field class="col-12 col-sm-6 p-2" appearance="outline">
+      <mat-label>Stock</mat-label>
+      <input matInput [type]="'number'" placeholder="Ingrese stock del producto"  formControlName="stock" required/>
+    </mat-form-field>
+
+  </div>
+  <div class="d-flex justify-content-end">
+    <button class="m-2" mat-button [routerLink]="['/productos']">Cancelar</button>
+    <button type="submit" class="mt-2 mb-2" mat-flat-button>Registrar Producto</button>
+  </div>
+</form>

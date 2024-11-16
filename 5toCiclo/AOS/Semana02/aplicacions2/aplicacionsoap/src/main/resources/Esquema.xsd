@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://comercio.com/sw"
+xmlns:tns="http://comercio.com/sw"
+elementFormDefault="qualified">
+
+<!--Componente de Servicio Buscar Producto-->
+
+<element name="BuscarProductoRequest">
+    <complexType>
+        <sequence>
+            <element name="codigo" type="long"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<element name="BuscarProductoResponse">
+    <complexType>
+        <sequence>
+            <element name="producto" type="tns:producto"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del Componente-->
+
+<!--Estructura de Datos Producto-->
+
+<complexType name="producto">
+    <sequence>
+        <!--Tienen que coincidir con el nombre de la tabla-->
+        <element name="codpro" type="long"></element> 
+        <element name="codcat" type="long"></element>
+        <element name="despro" type="string"></element>
+        <element name="unipro" type="string"></element>
+        <element name="pcopro" type="double"></element>
+        <element name="pvepro" type="double"></element>
+        <element name="stopro" type="double"></element>
+        <element name="frepro" type="string"></element>
+    </sequence>
+</complexType>
+
+<!--Fin de la Estructura Producto-->
+
+<!--Componente de Servicio Guardar Producto-->
+
+<element name="GuardarProductoRequest">
+    <complexType>
+        <sequence>
+            <element name="codpro" type="long"></element> 
+            <element name="codcat" type="long"></element>
+            <element name="despro" type="string"></element>
+            <element name="unipro" type="string"></element>
+            <element name="pcopro" type="double"></element>
+            <element name="pvepro" type="double"></element>
+            <element name="stopro" type="double"></element>
+            <element name="frepro" type="string"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<element name="GuardarProductoResponse">
+    <complexType>
+        <sequence>
+            <element name="estado" type="tns:estado"></element>
+            <element name="producto" type="tns:producto"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del proceso Guardar Producto-->
+
+<!--Estructura de la variable Estado-->
+
+<complexType name="estado">
+    <sequence>
+        <element name="codigo" type="string"></element>
+        <element name="mensaje" type="string"></element>
+    </sequence>
+</complexType>
+
+<!--Fin de la Estructura Estado-->
+
+<!--Componente de Servicio Listar Productos-->
+
+<element name="ListarProductosRequest">
+    <complexType>
+    </complexType>
+</element>
+
+<element name="ListarProductosResponse">
+    <complexType>
+        <sequence>
+            <element name="producto" type="tns:producto" maxOccurs="unbounded"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin de Listar-->
+
+<!--Componente de Servicio Eliminar Producto-->
+
+<element name="EliminarProductoRequest">
+    <complexType>
+        <sequence>
+            <element name="codpro" type="long"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<element name="EliminarProductoResponse">
+    <complexType>
+        <sequence>
+            <element name="estado" type="tns:estado"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del proceso Eliminar-->
+
+</schema>

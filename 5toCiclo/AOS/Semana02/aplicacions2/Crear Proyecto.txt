@@ -1,0 +1,331 @@
+CREAR PROYECTOS:
+
+java: 17
+packaging: War
+
+DEPENDENCIAS:
+
+1. MySQL Driver
+2. Spring Data JPA
+3. Spring Web Services
+4. Spring Web
+5. WSDL: Se copia el siguiente codigo en el POM entre las <dependencies><dependencies/>
+<dependency>
+		    <groupId>wsdl4j</groupId>
+		    <artifactId>wsdl4j</artifactId>		
+		</dependency>
+6. En el archivo "Recursos" enviado por el profe hay un archivo llamado "Esquema.xsd"
+hay que arrastrarlo y colocarlo en src/main/resources.
+7. Abrimos Esquema.xsl y modificamos el codigo como sigue:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://comercio.com/sw"
+xmlns:tns="http://comercio.com/sw"
+elementFormDefault="qualified">
+
+<!--Componente de Servicio Buscar Producto-->
+
+<element name="BuscarProductoRequest">
+    <complexType>
+        <sequence>
+            <element name="codigo" type="long"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<element name="BuscarProductoResponse">
+    <complexType>
+        <sequence>
+            <element name="producto" type="tns:producto"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del Componente-->
+
+<!--Estructura de Datos Producto-->
+
+<complexType name="producto">
+    <sequence>
+        <!--Tienen que coincidir con el nombre de la tabla-->
+        <element name="codpro" type="long"></element> 
+        <element name="codcat" type="long"></element>
+        <element name="despro" type="string"></element>
+        <element name="unipro" type="string"></element>
+        <element name="pcopro" type="double"></element>
+        <element name="pvepro" type="double"></element>
+        <element name="stopro" type="double"></element>
+        <element name="frepro" type="string"></element>
+    </sequence>
+</complexType>
+
+<!--Fin de la Estructura Producto-->
+
+<!--Componente de Servicio Guardar Producto-->
+
+<element name="GuardarProductoRequest">
+    <complexType>
+        <sequence>
+            <element name="codpro" type="long"></element> 
+            <element name="codcat" type="long"></element>
+            <element name="despro" type="string"></element>
+            <element name="unipro" type="string"></element>
+            <element name="pcopro" type="double"></element>
+            <element name="pvepro" type="double"></element>
+            <element name="stopro" type="double"></element>
+            <element name="frepro" type="string"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<element name="GuardarProductoResponse">
+    <complexType>
+        <sequence>
+            <element name="estado" type="tns:estado"></element>
+            <element name="producto" type="tns:producto"></element>
+        </sequence>
+    </complexType>
+</element>
+
+<!--Fin del proceso Guardar Producto-->
+
+<!--Estructura de la variable Estado-->
+
+<complexType name="estado">
+    <sequence>
+        <element name="codigo" type="string"></element>
+        <element name="mensaje" type="string"></element>
+    </sequence>
+</complexType>
+
+<!--Fin de la Estructura Estado-->
+
+</schema>
+
+8. En la carpeta "recursos" que envio el profe, abrimos Plugins.txt y copiamos
+el codigo en el pom entre los <plugins><plugins/>:
+
+<plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>jaxb2-maven-plugin</artifactId>					
+	<executions>
+				<execution>
+					<id>xjc</id>
+					<goals>
+						<goal>xjc</goal>
+					</goals>
+				</execution>
+	</executions>
+	<configuration>
+		<sources>
+			<source>
+				${project.basedir}/src/main/resources/Esquema.xsd
+			</source>
+		</sources>
+	</configuration>
+</plugin>
+
+9. Esto creara automaticamente las clases en la carpeta:
+target/generated-sources/jaxb 
+paquete: com.comercio.sw
+
+10. En main/java creamos los paquetes:
+	a. Configuracion
+	b. Intefaz
+	c. Modelo
+	d. Servicio
+
+11. En Modelo, creamos la clase CProducto y le creamos los parametros:
+
+package com.example.aplicacionsoap.Modelo;
+
+import jakarta.persistence.*;
+
+
+@Entity
+@Table(name="producto")
+
+
+public class CProducto {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int codpro;
+    private int codcat;
+    private String despro;
+    private String unipro;
+    private double pcopro;
+    private double pvepro;
+    private double stopro;
+    private String frepro;
+
+12. Con click derecho damos "Source Action" y generamos los constructors, uno con 
+argumentos y otro sin argumenos.
+13. Luego, generamos los getters and setters tambien en "Source Action" con todos
+los argumentos.
+14. Vamos al paquete Interfaz y creamos la INTERFAZ "IProducto". Le damos la herencia
+con el siguiente codigo:
+
+public interface IProducto extends CrudRepository<CProducto,Integer> {
+
+}
+15. Vamos al paquete Servicio y creamos la clase "ServicioProducto" y creamos este codigo:
+package com.example.aplicacionsoap.Servicio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.aplicacionsoap.Interfaz.IProducto;
+import com.example.aplicacionsoap.Modelo.CProducto;
+
+@Service
+public class ServicioProducto {
+
+    @Autowired
+    private IProducto ipro;
+
+    public List<CProducto> ListarProductos(){
+        return (List<CProducto>) ipro.findAll();
+    }
+
+    public CProducto BuscarProducto(int codigo){
+        return ipro.findById(codigo).get();
+    }
+
+    public CProducto GuardarProducto(CProducto p){
+        return ipro.save(p);
+    }
+
+}
+
+16. Vamos a Configuracion y creamos la clase "Configurar"
+
+package com.example.aplicacionsoap.Configuracion;
+
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.ws.config.annotation.EnableWs;
+import org.springframework.ws.transport.http.MessageDispatcherServlet;
+import org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition;
+import org.springframework.xml.xsd.SimpleXsdSchema;
+import org.springframework.xml.xsd.XsdSchema;
+
+@EnableWs
+@Configuration
+public class Configurar {
+
+    @Bean
+    public ServletRegistrationBean<MessageDispatcherServlet> mensaje(ApplicationContext ac){
+        MessageDispatcherServlet ob= new MessageDispatcherServlet();
+        ob.setApplicationContext(ac);
+        ob.setTransformWsdlLocations(true);
+        return new ServletRegistrationBean<>(ob, "/sw/*");
+    }
+
+    @Bean (name="producto")
+    public DefaultWsdl11Definition definirservicios(XsdSchema esquema){
+        DefaultWsdl11Definition ob= new DefaultWsdl11Definition();
+        ob.setPortTypeName("ProductoPort");
+        ob.setLocationUri("/sw");
+        ob.setTargetNamespace("http://comercio.com/sw");
+        ob.setSchema(esquema);
+        return ob;
+    }
+
+    @Bean
+    public XsdSchema esquema(){
+        return new SimpleXsdSchema(new ClassPathResource("Esquema.xsd"));
+    }
+
+}
+
+17. En el paquete Configuracion, creo la clase "PuntosAcceso" codificamos:
+
+package com.example.aplicacionsoap.Configuracion;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ws.server.endpoint.annotation.Endpoint;
+import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
+import org.springframework.ws.server.endpoint.annotation.RequestPayload;
+import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
+
+import com.comercio.sw.BuscarProductoRequest;
+import com.comercio.sw.BuscarProductoResponse;
+import com.comercio.sw.Estado;
+import com.comercio.sw.GuardarProductoRequest;
+import com.comercio.sw.GuardarProductoResponse;
+import com.comercio.sw.Producto;
+import com.example.aplicacionsoap.Modelo.CProducto;
+import com.example.aplicacionsoap.Servicio.ServicioProducto;
+
+@Endpoint
+public class PuntosAcceso {
+
+    static final String url="http://comercio.com/sw";
+
+    @Autowired
+    private ServicioProducto sp;
+
+    @PayloadRoot(namespace = url, localPart = "BuscarProductoRequest")
+    @ResponsePayload
+    public BuscarProductoResponse BuscarProducto(@RequestPayload BuscarProductoRequest peticion){
+        BuscarProductoResponse ob=new BuscarProductoResponse();
+        CProducto cproducto= sp.BuscarProducto(peticion.getCodigo());
+        Producto eproducto= new Producto();
+        BeanUtils.copyProperties(cproducto, eproducto);
+        ob.setProducto(eproducto);
+        return ob;
+    }
+
+    @PayloadRoot(namespace = url, localPart = "GuardarProductoRequest")
+    @ResponsePayload
+    public GuardarProductoResponse GuardarProducto(@RequestPayload GuardarProductoRequest peticion){
+        GuardarProductoResponse ob=new GuardarProductoResponse();
+        Estado estado = new Estado();
+        Producto eproducto = new Producto();
+        CProducto cproducto= new CProducto(peticion.getCodpro(), 
+                                           peticion.getCodcat(), 
+                                           peticion.getDespro(), 
+                                           peticion.getUnipro(), 
+                                           peticion.getPcopro(),
+                                           peticion.getPvepro(),
+                                           peticion.getStopro(),
+                                           peticion.getFrepro());
+        CProducto p=sp.GuardarProducto(cproducto);
+        if (p==null){
+            estado.setCodigo("ERROR");
+            estado.setMensaje("Error al registrar datos del producto...!");
+        }
+        else{
+            estado.setCodigo("EXITO");
+            estado.setMensaje("Se registraron correctamente los datos del producto...!");
+        }
+        BeanUtils.copyProperties(p, eproducto);
+        ob.setProducto(eproducto);
+        ob.setEstado(estado);
+        return ob;
+    }
+
+}
+
+18. En resources/application.properties dejamos el siguiente codigo para configurar
+la conexion con la base de datos:
+
+spring.datasource.url=jdbc:mysql://localhost:3307/bdserviciosidat
+spring.datasource.username=gvalera
+spring.datasource.password=01234567
+spring.application.name=/sw/producto.wsdl
+server.port=8070
+
+19. Para hacer las pruebas:
+
+http://localhost:8070/sw/producto.wsdl
+

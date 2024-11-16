@@ -1,0 +1,20 @@
+MODIFICAR EN EL SISTEMA:
+1. Usuario de tipo cliente predeterminado:
+	cliente pass cliente.
+
+
+
+5. Mover acciones para que concuerden con la navegacion
+6. Pagina de relogeo
+
+
+9. Permitir que crear productos registre imagenes
+10. Nuevo Pedido no funciona
+
+RESUELTO:
+4. RESUELTO!!!: Agregar boton de regresar a TODAS las vistas.
+7. RESUELTO!!!: User Edit no abre.
+8. RESUELTO!!!: El menu de navegacion debe estar en todas las paginas
+2. Agregar drowpdownlist 'Categorias' al editProducto.
+3. Ningun eliminar funciona en la version de Jhon. Preguntarle si algo tiene que ver el spring security
+

@@ -1,0 +1,484 @@
+USE master
+go
+
+IF EXISTS(SELECT * FROM sysdatabases 
+			WHERE name='BDVIAJES2024')
+BEGIN
+	ALTER DATABASE BDVIAJES2024
+	SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+	
+	DROP DATABASE BDVIAJES2024
+end
+go
+
+CREATE DATABASE BDVIAJES2024
+COLLATE Modern_Spanish_CI_AI
+GO
+
+USE BDVIAJES2024
+GO
+
+SET LANGUAGE spanish
+go
+
+
+CREATE TABLE Bus (
+	nro_bus int NOT NULL Primary Key ,
+	nro_pla char(6) NOT NULL ,
+	cap_bus int NULL 
+) 
+GO
+
+CREATE TABLE Categorias (
+	cod_cat char(3) NOT NULL Primary Key ,
+	des_cat varchar(30) NOT NULL
+) 
+GO
+
+CREATE  TABLE Chofer (
+	cod_chof char(5) NOT NULL Primary Key ,
+	nom_chof varchar (50) NOT NULL ,
+	fec_ing datetime NULL ,
+	cod_cat char(3) NOT NULL REFERENCES Categorias,
+	sdo_bas decimal(7,2) NULL 
+) 
+GO
+
+CREATE TABLE Rutas (
+	cod_rut char (4) NOT NULL Primary Key ,
+	des_rut varchar (40) NOT NULL ,
+	pago_chof numeric(7, 2) NULL 
+) 
+go
+
+CREATE TABLE Viajes (
+	nro_via char (6) NOT NULL Primary key,
+	nro_bus int NOT NULL REFERENCES BUS,
+	cod_rut char (4) NOT NULL REFERENCES RUTAS,
+	cod_chof char (5) NOT NULL REFERENCES CHOFER,
+	hrs_sal time NULL ,
+	fec_via datetime NULL ,
+        costo_via decimal(6,2) null,  
+)
+GO
+
+-- A = Adulto
+-- E = Estudiante
+-- N = Niño
+
+CREATE TABLE Pasajeros (
+	nro_bol char(6) NOT NULL primary key ,
+	nro_via char(6) NOT NULL REFERENCES VIAJES,
+	nom_pas varchar (50) NULL ,
+	nro_asi int NULL,
+        tipo_pas char(1) null, 
+        pago   decimal(6,2) null
+) 
+GO
+
+
+--LLENAR TABLA BUS
+INSERT INTO Bus VALUES (1,'WH2145',40 )
+INSERT INTO Bus VALUES (2,'MN1975',60 )
+INSERT INTO Bus VALUES (3,'PQ5478',50 )
+INSERT INTO Bus VALUES (4,'RP7812',40 )
+INSERT INTO Bus VALUES (5,'TP3547',40 )
+INSERT INTO Bus VALUES (6,'WER529',40 )
+INSERT INTO Bus VALUES (7,'PKJ504',60 )
+INSERT INTO Bus VALUES (8,'AXA728',50 )
+INSERT INTO Bus VALUES (9,'EF1059',40 )
+INSERT INTO Bus VALUES (10,'IO5742',40)
+GO
+
+--LLENAR TABLA CATEGORIAS
+INSERT INTO Categorias VALUES ('C01','Categoria A-I')
+INSERT INTO Categorias VALUES ('C02','Categoria A-II')
+INSERT INTO Categorias VALUES ('C03','Categoria A-III')
+INSERT INTO Categorias VALUES ('C04','Categoria B-I')
+INSERT INTO Categorias VALUES ('C05','Categoria B-II')
+INSERT INTO Categorias VALUES ('C06','Categoria B-III')
+GO
+
+-- LLENAR TABLA CHOFER
+INSERT INTO Chofer VALUES ('C0001','PATRICIO HERRERA','10/08/1999','C01',1550 )
+INSERT INTO Chofer VALUES ('C0002','JORGE QUISPE','05/12/1997','C02',1500 )
+INSERT INTO Chofer VALUES ('C0003','EDWARD TEMPLE','11/02/1995','C03',1550 )
+INSERT INTO Chofer VALUES ('C0004','ELMER MORALES','10/07/1999','C01',1550 )
+INSERT INTO Chofer VALUES ('C0005','MARCOS CUEVA','04/05/1997','C02',1550 )
+INSERT INTO Chofer VALUES ('C0006','LUIS PRIETO','04/05/2003','C02',1550 )
+INSERT INTO Chofer VALUES ('C0007','ELOY LAZO','04/05/2000','C03',1650 )
+INSERT INTO Chofer VALUES ('C0008','JAVIER BENAVIDEZ','04/05/2001','C03',1650 )
+GO
+
+
+-- LLENAR TABLA RUTAS
+INSERT INTO Rutas VALUES ('LMTR','TRUJILLO',110)
+INSERT INTO Rutas VALUES ('LMCZ','CUZCO',200)
+INSERT INTO Rutas VALUES ('LMAR','AREQUIPA',135)
+INSERT INTO Rutas VALUES ('LMHA','HUANCAVELICA', 140)
+INSERT INTO Rutas VALUES ('LMTA','TACNA', 300)
+INSERT INTO Rutas VALUES ('LMCH','CHICLAYO', 100)
+INSERT INTO Rutas VALUES ('LMIC','ICA', 60)
+INSERT INTO Rutas VALUES ('LMHZ','HUARAZ', 90)
+INSERT INTO Rutas VALUES ('LMHC','HUANUCO', 120)
+INSERT INTO Rutas VALUES ('LMAY','AYACUCHO', 170)
+INSERT INTO Rutas VALUES ('LMPI','PIURA', 120)
+INSERT INTO Rutas VALUES ('LMUC','UCAYALI', 150)
+INSERT INTO Rutas VALUES ('LMAP','APURIMAC', 110)
+INSERT INTO Rutas VALUES ('LMCA','CAJAMARCA', 180)
+INSERT INTO Rutas VALUES ('LMTU','TUMBES', 150)
+GO
+
+
+-- LLENAR TABLA VIAJES
+INSERT INTO Viajes VALUES ('100001',1,'LMTA','C0001','10:30','10/01/2022',70)
+INSERT INTO Viajes VALUES ('100002',2,'LMTA','C0002','09:30','25/01/2022',60)
+INSERT INTO Viajes VALUES ('100003',3,'LMCZ','C0003','11:30','28/01/2022',80)
+INSERT INTO Viajes VALUES ('100004',2,'LMCZ','C0002','08:00','09/02/2022',90)
+INSERT INTO Viajes VALUES ('100005',1,'LMIC','C0007','13:30','17/02/2022',60)
+INSERT INTO Viajes VALUES ('100006',4,'LMIC','C0003','15:00','25/02/2022',50)
+INSERT INTO Viajes VALUES ('100007',5,'LMHZ','C0002','21:30','09/03/2022',50)
+INSERT INTO Viajes VALUES ('100008',1,'LMHZ','C0001','12:30','14/03/2022',60)
+INSERT INTO Viajes VALUES ('100009',3,'LMCH','C0004','18:30','30/03/2022',70)
+INSERT INTO Viajes VALUES ('100010',4,'LMTR','C0003','19:00','18/04/2022',70)
+INSERT INTO Viajes VALUES ('100011',2,'LMCZ','C0005','19:40','24/04/2022',80)
+INSERT INTO Viajes VALUES ('100012',3,'LMIC','C0003','17:00','12/05/2022',70)
+INSERT INTO Viajes VALUES ('100013',3,'LMHA','C0002','18:40','28/05/2022',90)
+INSERT INTO Viajes VALUES ('100014',4,'LMAY','C0003','19:00','04/06/2022',30)
+INSERT INTO Viajes VALUES ('100015',1,'LMTA','C0002','19:00','24/06/2022',40)
+INSERT INTO Viajes VALUES ('100016',1,'LMCZ','C0001','17:00','08/07/2022',50)
+INSERT INTO Viajes VALUES ('100017',4,'LMAR','C0002','19:00','16/07/2022',70)
+INSERT INTO Viajes VALUES ('100018',2,'LMTR','C0005','15:00','25/07/2022',60)
+INSERT INTO Viajes VALUES ('100019',3,'LMTR','C0004','19:00','11/08/2022',60)
+INSERT INTO Viajes VALUES ('100020',4,'LMAY','C0005','19:00','22/08/2022',70)
+INSERT INTO Viajes VALUES ('100021',3,'LMTR','C0007','19:00','15/09/2022',60)
+INSERT INTO Viajes VALUES ('100022',4,'LMAY','C0007','19:00','22/09/2022',70)
+INSERT INTO Viajes VALUES ('100023',6,'LMPI','C0001','10:30','10/10/2022',70)
+INSERT INTO Viajes VALUES ('100024',5,'LMTA','C0002','09:30','25/10/2022',60)
+INSERT INTO Viajes VALUES ('100025',7,'LMCZ','C0003','11:30','28/10/2022',80)
+INSERT INTO Viajes VALUES ('100026',8,'LMCA','C0002','08:00','09/11/2022',90)
+INSERT INTO Viajes VALUES ('100027',9,'LMUC','C0007','13:30','17/11/2022',60)
+INSERT INTO Viajes VALUES ('100028',10,'LMIC','C0003','15:00','25/11/2022',50)
+INSERT INTO Viajes VALUES ('100029',5,'LMHZ','C0002','21:30','09/12/2022',50)
+INSERT INTO Viajes VALUES ('100030',6,'LMPI','C0001','12:30','14/12/2022',60)
+INSERT INTO Viajes VALUES ('100031',7,'LMCH','C0004','18:30','30/12/2022',70)
+INSERT INTO Viajes VALUES ('100032',8,'LMTR','C0003','19:00','30/12/2022',70)
+INSERT INTO Viajes VALUES ('100033',9,'LMCZ','C0005','19:40','14/01/2023',80)
+INSERT INTO Viajes VALUES ('100034',10,'LMUC','C0003','17:00','15/01/2023',70)
+INSERT INTO Viajes VALUES ('100035',3,'LMHA','C0002','18:40','28/01/2023',90)
+INSERT INTO Viajes VALUES ('100036',4,'LMAY','C0003','19:00','04/02/2023',30)
+INSERT INTO Viajes VALUES ('100037',1,'LMUC','C0002','19:00','14/02/2023',40)
+INSERT INTO Viajes VALUES ('100038',5,'LMCZ','C0001','17:00','28/02/2023',50)
+INSERT INTO Viajes VALUES ('100039',4,'LMAR','C0002','19:00','06/03/2023',70)
+INSERT INTO Viajes VALUES ('100040',2,'LMCA','C0005','15:00','15/03/2023',60)
+INSERT INTO Viajes VALUES ('100041',3,'LMTR','C0004','19:00','24/03/2023',60)
+INSERT INTO Viajes VALUES ('100042',4,'LMAP','C0005','19:00','12/04/2023',70)
+INSERT INTO Viajes VALUES ('100043',3,'LMCA','C0007','19:00','15/04/2023',60)
+INSERT INTO Viajes VALUES ('100044',4,'LMAP','C0007','19:00','23/04/2023',70)
+INSERT INTO Viajes VALUES ('100045',1,'LMCH','C0005','19:40','04/05/2023',80)
+INSERT INTO Viajes VALUES ('100046',10,'LMUC','C0003','17:00','13/05/2023',70)
+INSERT INTO Viajes VALUES ('100047',2,'LMHC','C0002','18:40','28/05/2023',90)
+INSERT INTO Viajes VALUES ('100048',3,'LMAY','C0003','19:00','04/06/2023',30)
+INSERT INTO Viajes VALUES ('100049',4,'LMHC','C0002','19:00','24/06/2023',40)
+INSERT INTO Viajes VALUES ('100050',5,'LMCH','C0001','17:00','07/07/2023',50)
+INSERT INTO Viajes VALUES ('100051',6,'LMAR','C0002','19:00','17/07/2023',70)
+INSERT INTO Viajes VALUES ('100052',7,'LMCH','C0005','15:00','27/07/2023',60)
+INSERT INTO Viajes VALUES ('100053',8,'LMTR','C0004','19:00','11/08/2023',60)
+INSERT INTO Viajes VALUES ('100054',9,'LMCA','C0005','19:00','22/08/2023',70)
+INSERT INTO Viajes VALUES ('100055',10,'LMCA','C0007','19:00','28/08/2023',60)
+INSERT INTO Viajes VALUES ('100056',1,'LMAP','C0007','19:00','07/09/2023',70)
+INSERT INTO Viajes VALUES ('100057',2,'LMTA','C0001','10:30','14/09/2023',70)
+INSERT INTO Viajes VALUES ('100058',3,'LMTA','C0002','09:30','25/09/2023',60)
+INSERT INTO Viajes VALUES ('100059',4,'LMCZ','C0003','11:30','06/10/2023',80)
+INSERT INTO Viajes VALUES ('100060',5,'LMCZ','C0002','08:00','19/10/2023',90)
+INSERT INTO Viajes VALUES ('100061',6,'LMIC','C0007','13:30','21/10/2023',60)
+INSERT INTO Viajes VALUES ('100062',7,'LMIC','C0003','15:00','30/10/2023',50)
+INSERT INTO Viajes VALUES ('100063',8,'LMHZ','C0002','21:30','09/11/2023',50)
+INSERT INTO Viajes VALUES ('100064',9,'LMHZ','C0001','12:30','14/11/2023',60)
+INSERT INTO Viajes VALUES ('100065',10,'LMCH','C0004','18:30','19/11/2023',70)
+INSERT INTO Viajes VALUES ('100066',1,'LMTR','C0003','19:00','28/11/2023',70)
+INSERT INTO Viajes VALUES ('100067',2,'LMCZ','C0005','19:40','02/12/2023',80)
+INSERT INTO Viajes VALUES ('100068',4,'LMAY','C0005','19:00','04/12/2023',70)
+INSERT INTO Viajes VALUES ('100069',3,'LMTR','C0007','19:00','06/12/2023',60)
+INSERT INTO Viajes VALUES ('100070',4,'LMAY','C0007','19:00','10/12/2023',70)
+INSERT INTO Viajes VALUES ('100071',6,'LMPI','C0001','12:30','14/12/2023',60)
+INSERT INTO Viajes VALUES ('100072',7,'LMCH','C0004','18:30','30/12/2023',70)
+INSERT INTO Viajes VALUES ('100073',8,'LMTR','C0003','19:00','30/12/2023',70)
+INSERT INTO Viajes VALUES ('100074',9,'LMCZ','C0005','19:40','14/01/2024',80)
+INSERT INTO Viajes VALUES ('100075',10,'LMUC','C0003','17:00','15/01/2024',70)
+INSERT INTO Viajes VALUES ('100076',3,'LMHA','C0002','18:40','28/01/2024',90)
+INSERT INTO Viajes VALUES ('100077',3,'LMTR','C0004','19:00','12/02/2024',60)
+INSERT INTO Viajes VALUES ('100078',4,'LMAP','C0005','19:00','18/02/2024',70)
+INSERT INTO Viajes VALUES ('100079',3,'LMCA','C0007','19:00','25/02/2024',60)
+INSERT INTO Viajes VALUES ('100080',4,'LMAP','C0007','19:00','03/03/2024',70)
+INSERT INTO Viajes VALUES ('100081',1,'LMCH','C0005','19:40','14/03/2024',80)
+INSERT INTO Viajes VALUES ('100082',10,'LMUC','C0003','17:00','23/03/2024',70)
+INSERT INTO Viajes VALUES ('100083',2,'LMHC','C0002','18:40','28/03/2024',90)
+GO
+
+-- LLENAR TABLA PASAJEROS
+INSERT INTO Pasajeros VALUES ('000001','100001','Claudia Vasquez',1,'E',40)
+INSERT INTO Pasajeros VALUES ('000002','100002','Carlos Paredes',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000003','100001','Juan Sachez',3,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000004','100001','Adela Meza',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000005','100002','Gloria Delgado',12,'N' ,60)
+INSERT INTO Pasajeros VALUES ('000006','100001','Mirna Mejia',6,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000007','100001','Jose Linares',7,'A',70)
+INSERT INTO Pasajeros VALUES ('000008','100002','Jenifer Cruzado',8,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000009','100002','Ramor Cercado',9,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000010','100001','Teresa Egusquiza',10,'A' ,20)
+INSERT INTO Pasajeros VALUES ('000011','100001','Carolina Retamozo',11,'N',30)
+INSERT INTO Pasajeros VALUES ('000012','100002','Sandy Paredes',12,'A' ,40)
+INSERT INTO Pasajeros VALUES ('000013','100001','Nurith Guillen',13,'A',70)
+INSERT INTO Pasajeros VALUES ('000014','100002','Daniel Vergara',14,'N',50)
+INSERT INTO Pasajeros VALUES ('000015','100001','Johana Lopez',10,'A',70)
+INSERT INTO Pasajeros VALUES ('000016','100003','Ernestina Hidalgo',11,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000017','100004','Milagros Cardenas',5,'A',70)
+INSERT INTO Pasajeros VALUES ('000018','100004','Lucero Malpartida',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000019','100004','Maribel Gonzales',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000020','100005','Mirlo Gamboa',7,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000021','100005','Roberto Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000022','100005','Miguel Gaspar Acosta',14,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000023','100006','Julio Echegaray',10,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000024','100006','Luis Cano Siu',8,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000025','100006','Percy Melgarejo',9,'N',70)
+INSERT INTO Pasajeros VALUES ('000026','100006','Alan Grijalva',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000027','100007','Jose Marin Lopez',5,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000028','100007','Dario Rojas',14,'A',70)
+INSERT INTO Pasajeros VALUES ('000029','100008','Fidel Ramos',11,'N',70)
+INSERT INTO Pasajeros VALUES ('000030','100008','Juana Cardenas',5,'E',70)
+INSERT INTO Pasajeros VALUES ('000031','100009','Isabel Malpartida',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000032','100009','Ximena Gonzales',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000033','100010','Paola Gamboa',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000034','100011','Cristina Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000035','100012','Elizabeth Acosta',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000036','100013','Carmen Echegaray',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000037','100014','Daniel Siu',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000038','100015','Luis Melgarejo',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000039','100016','Martin Camacho',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000040','100017','Pedro Vargas',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000041','100018','Manuel Rojas',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000042','100019','Roxana Cueva',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000043','100019','Mario Donayre, juan',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000044','100019','Ana Mejia',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000045','100020','Julio Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000046','100020','Ricardo Diaz',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000047','100020','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000048','100021','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000049','100021','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000050','100021','Raul Gonzales ',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000051','100022','Juan Carlos Bravo',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000052','100022','Carmen Rengifo',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000053','100022','Gloria Delgado',12,'N' ,60)
+INSERT INTO Pasajeros VALUES ('000054','100023','Mirna Mejia',6,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000055','100023','Jose Linares',7,'A',70)
+INSERT INTO Pasajeros VALUES ('000056','100023','Dario Rojas',14,'A',70)
+INSERT INTO Pasajeros VALUES ('000057','100024','Fidel Ramos',11,'N',70)
+INSERT INTO Pasajeros VALUES ('000058','100024','Juana Cardenas',5,'E',70)
+INSERT INTO Pasajeros VALUES ('000059','100025','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000060','100025','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000061','100025','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000062','100026','Juana Cardenas',5,'E',70)
+INSERT INTO Pasajeros VALUES ('000063','100026','Isabel Malpartida',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000064','100027','Ximena Gonzales',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000065','100027','Paola Gamboa',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000066','100027','Roxana Cueva',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000067','100028','Mario Donayre, juan',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000068','100028','Ana Mejia',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000069','100028','Julio Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000070','100029','Ricardo Diaz',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000071','100029','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000072','100029','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000073','100030','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000074','100030','Raul Gonzales ',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000075','100031','Juan Carlos Bravo',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000076','100031','Carmen Rengifo',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000077','100032','Jenifer Cruzado',8,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000078','100032','Ramor Cercado',9,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000079','100033','Teresa Egusquiza',10,'A' ,20)
+INSERT INTO Pasajeros VALUES ('000080','100033','Carolina Retamozo',11,'N',30)
+INSERT INTO Pasajeros VALUES ('000081','100034','Sandy Paredes',12,'A' ,40)
+INSERT INTO Pasajeros VALUES ('000082','100034','Nurith Guillen',13,'A',70)
+INSERT INTO Pasajeros VALUES ('000083','100034','Daniel Vergara',14,'N',50)
+INSERT INTO Pasajeros VALUES ('000084','100035','Johana Lopez',10,'A',70)
+INSERT INTO Pasajeros VALUES ('000085','100035','Ernestina Hidalgo',11,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000086','100036','Milagros Cardenas',5,'A',70)
+INSERT INTO Pasajeros VALUES ('000087','100036','Lucero Malpartida',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000088','100037','Maribel Gonzales',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000089','100037','Mirlo Gamboa',7,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000090','100038','Roberto Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000091','100038','Miguel Gaspar Acosta',14,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000092','100039','Julio Echegaray',10,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000093','100039','Luis Cano Siu',8,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000094','100039','Percy Melgarejo',9,'N',70)
+INSERT INTO Pasajeros VALUES ('000095','100040','Elizabeth Acosta',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000096','100040','Carmen Echegaray',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000097','100041','Daniel Siu',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000098','100041','Luis Melgarejo',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000099','100042','Martin Camacho',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000100','100042','Pedro Vargas',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000101','100043','Manuel Rojas',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000102','100043','Roxana Cueva',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000103','100044','Mario Donayre, juan',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000104','100044','Ana Mejia',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000105','100045','Julio Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000106','100045','Ricardo Diaz',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000107','100046','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000108','100046','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000109','100046','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000110','100047','Gloria Delgado',12,'N' ,60)
+INSERT INTO Pasajeros VALUES ('000111','100047','Mirna Mejia',6,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000112','100047','Jose Linares',7,'A',70)
+INSERT INTO Pasajeros VALUES ('000113','100048','Dario Rojas',14,'A',70)
+INSERT INTO Pasajeros VALUES ('000114','100048','Fidel Ramos',11,'N',70)
+INSERT INTO Pasajeros VALUES ('000115','100048','Juana Cardenas',5,'E',70)
+INSERT INTO Pasajeros VALUES ('000116','100049','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000117','100049','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000118','100049','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000119','100050','Juana Cardenas',5,'E',70)
+INSERT INTO Pasajeros VALUES ('000120','100050','Isabel Malpartida',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000121','100050','Ximena Gonzales',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000122','100051','Paola Gamboa',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000123','100051','Roxana Cueva',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000124','100052','Lucero Malpartida',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000125','100052','Maribel Gonzales',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000126','100053','Mirlo Gamboa',7,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000127','100053','Roberto Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000128','100054','Miguel Gaspar Acosta',14,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000129','100054','Julio Echegaray',10,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000130','100055','Luis Cano Siu',8,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000131','100055','Percy Melgarejo',9,'N',70)
+INSERT INTO Pasajeros VALUES ('000132','100056','Elizabeth Acosta',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000133','100056','Carmen Echegaray',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000134','100057','Daniel Siu',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000135','100057','Luis Melgarejo',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000136','100058','Roxana Cueva',2,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000137','100058','Mario Donayre, juan',4,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000138','100059','Ana Mejia',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000139','100059','Julio Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000140','100060','Ricardo Diaz',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000141','100060','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000142','100060','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000143','100060','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000144','100061','Raul Gonzales ',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000145','100061','Juan Carlos Bravo',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000146','100061','Carmen Rengifo',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000147','100061','Mia Vasquez',1,'E',40)
+INSERT INTO Pasajeros VALUES ('000148','100062','Diana Paredes',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000149','100062','Dora Sachez',3,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000150','100062','Epifanio Meza',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000151','100062','Francisca Delgado',12,'N' ,60)
+INSERT INTO Pasajeros VALUES ('000152','100063','Guillermo Mejia',6,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000153','100063','Elbira Linares',7,'A',70)
+INSERT INTO Pasajeros VALUES ('000154','100063','Cristina Cruzado',8,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000155','100063','Elizabeth Cercado',9,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000156','100064','Carmen Egusquiza',10,'A' ,20)
+INSERT INTO Pasajeros VALUES ('000157','100064','Paola Retamozo',11,'N',30)
+INSERT INTO Pasajeros VALUES ('000158','100064','Gonzalo Paredes',12,'A' ,40)
+INSERT INTO Pasajeros VALUES ('000159','100064','Isabel Saavedra',10,'E' ,40)
+INSERT INTO Pasajeros VALUES ('000160','100065','Carolina Retamozo',11,'N',30)
+INSERT INTO Pasajeros VALUES ('000161','100065','Sandy Paredes',12,'A' ,40)
+INSERT INTO Pasajeros VALUES ('000162','100065','Nurith Guillen',13,'A',70)
+INSERT INTO Pasajeros VALUES ('000163','100065','Daniel Vergara',14,'N',50)
+INSERT INTO Pasajeros VALUES ('000164','100066','Johana Lopez',10,'A',70)
+INSERT INTO Pasajeros VALUES ('000165','100066','Ernestina Hidalgo',11,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000166','100066','Milagros Cardenas',5,'A',70)
+INSERT INTO Pasajeros VALUES ('000167','100066','Lucero Malpartida',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000168','100067','Maribel Gonzales',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000169','100067','Mirlo Gamboa',7,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000170','100067','Roberto Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000171','100067','Miguel Gaspar Acosta',14,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000172','100068','Julio Echegaray',10,'E' ,60)
+INSERT INTO Pasajeros VALUES ('000173','100068','Luis Cano Siu',8,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000174','100068','Percy Melgarejo',9,'N',70)
+INSERT INTO Pasajeros VALUES ('000175','100068','Alan Grijalva',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000176','100068','Jose Marin Lopez',5,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000177','100069','Ana Mejia',7,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000178','100069','Julio Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000179','100069','Ricardo Diaz',14,'N',70)
+INSERT INTO Pasajeros VALUES ('000180','100069','Alicia Zuta',10,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000181','100070','Eliana Carrasco',08,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000182','100070','Percy Quispe',09,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000183','100070','Raul Gonzales ',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000184','100070','Juan Carlos Bravo',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000185','100070','Carmen Rengifo',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000186','100071','Raul Gonzales ',13,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000187','100071','Juan Carlos Bravo',5,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000188','100071','Carmen Rengifo',14,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000189','100071','Mia Vasquez',1,'E',40)
+INSERT INTO Pasajeros VALUES ('000190','100072','Diana Paredes',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000191','100072','Dora Sachez',3,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000192','100072','Epifanio Meza',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000193','100072','Francisca Delgado',12,'N' ,60)
+INSERT INTO Pasajeros VALUES ('000194','100073','Guillermo Mejia',6,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000195','100073','Elbira Linares',7,'A',70)
+INSERT INTO Pasajeros VALUES ('000196','100073','Cristina Cruzado',8,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000197','100073','Elizabeth Cercado',9,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000198','100074','Carmen Egusquiza',10,'A' ,20)
+INSERT INTO Pasajeros VALUES ('000199','100074','Paola Retamozo',11,'N',30)
+INSERT INTO Pasajeros VALUES ('000200','100074','Gonzalo Paredes',12,'A' ,40)
+INSERT INTO Pasajeros VALUES ('000201','100074','Isabel Saavedra',10,'E' ,40)
+INSERT INTO Pasajeros VALUES ('000202','100075','Carolina Retamozo',11,'N',30)
+INSERT INTO Pasajeros VALUES ('000203','100075','Sandy Paredes',12,'A' ,40)
+INSERT INTO Pasajeros VALUES ('000204','100075','Nurith Guillen',13,'A',70)
+INSERT INTO Pasajeros VALUES ('000205','100075','Daniel Vergara',14,'N',50)
+INSERT INTO Pasajeros VALUES ('000206','100076','Johana Lopez',10,'A',70)
+INSERT INTO Pasajeros VALUES ('000207','100076','Ernestina Hidalgo',11,'E' ,70)
+INSERT INTO Pasajeros VALUES ('000208','100076','Milagros Cardenas',5,'A',70)
+INSERT INTO Pasajeros VALUES ('000209','100076','Lucero Malpartida',2,'A' ,50)
+INSERT INTO Pasajeros VALUES ('000210','100077','Maribel Gonzales',4,'N' ,70)
+INSERT INTO Pasajeros VALUES ('000211','100077','Mirlo Gamboa',7,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000212','100077','Roberto Maldonado',11,'A' ,70)
+INSERT INTO Pasajeros VALUES ('000213','100077','Claudia Vasquez',1,'E',40)
+INSERT INTO Pasajeros VALUES ('000214','100078','Carlos Paredes',2,'A' ,50)
+INSERT INTO pasajeros VALUES ('000215','100078','Juan Sachez',3,'A' ,70)
+INSERT INTO pasajeros VALUES ('000216','100078','Adela Meza',4,'N' ,70)
+INSERT INTO pasajeros VALUES ('000217','100078','Gloria Delgado',12,'N' ,60)
+INSERT INTO pasajeros VALUES ('000218','100078','Mirna Mejia',6,'E' ,70)
+INSERT INTO pasajeros VALUES ('000219','100079','Jose Linares',7,'A',70)
+INSERT INTO pasajeros VALUES ('000220','100079','Jenifer Cruzado',8,'A' ,50)
+INSERT INTO pasajeros VALUES ('000221','100079','Ramor Cercado',9,'A' ,50)
+INSERT INTO pasajeros VALUES ('000222','100080','Teresa Egusquiza',10,'A' ,20)
+INSERT INTO pasajeros VALUES ('000223','100080','Carolina Retamozo',11,'N',30)
+INSERT INTO pasajeros VALUES ('000224','100080','Sandy Paredes',12,'A' ,40)
+INSERT INTO pasajeros VALUES ('000225','100081','Nurith Guillen',13,'A',70)
+INSERT INTO pasajeros VALUES ('000226','100081','Daniel Vergara',14,'N',50)
+INSERT INTO pasajeros VALUES ('000227','100081','Johana Lopez',10,'A',70)
+INSERT INTO pasajeros VALUES ('000228','100081','Ernestina Hidalgo',11,'E' ,70)
+INSERT INTO pasajeros VALUES ('000229','100081','Alicia Zuta',10,'A' ,70)
+INSERT INTO pasajeros VALUES ('000230','100082','Eliana Carrasco',08,'E' ,70)
+INSERT INTO pasajeros VALUES ('000231','100082','Percy Quispe',09,'N' ,70)
+INSERT INTO pasajeros VALUES ('000232','100082','Raul Gonzales ',13,'A' ,70)
+INSERT INTO pasajeros VALUES ('000233','100082','Juan Carlos Bravo',5,'N' ,70)
+INSERT INTO pasajeros VALUES ('000234','100082','Carmen Rengifo',14,'E' ,70)
+INSERT INTO pasajeros VALUES ('000235','100082','Gloria Delgado',12,'N' ,60)
+INSERT INTO pasajeros VALUES ('000236','100083','Mirna Mejia',6,'E' ,70)
+INSERT INTO pasajeros VALUES ('000237','100083','Jose Linares',7,'A',70)
+INSERT INTO pasajeros VALUES ('000238','100083','Dario Rojas',14,'A',70)
+INSERT INTO pasajeros VALUES ('000239','100083','Fidel Ramos',11,'N',70)
+INSERT INTO pasajeros VALUES ('000240','100083','Juana Cardenas',5,'E',70)
+INSERT INTO pasajeros VALUES ('000241','100083','Alicia Zuta',10,'A' ,70)
+INSERT INTO pasajeros VALUES ('000242','100083','Eliana Carrasco',08,'E' ,70)
+GO
+
+ALTER TABLE Categorias
+ADD Eliminado CHAR(2) Default('No') With Values
+GO
+ALTER TABLE Chofer
+ADD Eliminado CHAR(2) Default('No') With Values
+GO
+ALTER TABLE Pasajeros
+ADD Eliminado CHAR(2) Default('No') With Values
+GO
+ALTER TABLE Bus
+ADD Eliminado CHAR(2) Default('No') With Values
+GO
+ALTER TABLE Viajes
+ADD Eliminado CHAR(2) Default('No') With Values
+GO
+ALTER TABLE Rutas
+ADD Eliminado CHAR(2) Default('No') With Values
+GO
+
+SELECT 'Base de Datos BDVIAJES2024 creado correctamente' AS MENSAJE
+GO

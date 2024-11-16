@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ClienteAPI_Valera
+build_property.RootNamespace = ClienteAPI_Valera
+build_property.ProjectDir = D:\IDAT IV - 2024\Herramientas de Programación II\EC03 - Gustavo Valera\SlnClienteAPI_Valera\ClienteAPI_Valera\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\IDAT IV - 2024\Herramientas de Programación II\EC03 - Gustavo Valera\SlnClienteAPI_Valera\ClienteAPI_Valera
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/CreatePropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXENyZWF0ZVByb3BpZXRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/DeletePropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXERlbGV0ZVByb3BpZXRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/DetailsPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXERldGFpbHNQcm9waWV0YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/EditPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXEVkaXRQcm9waWV0YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/IndexPropietario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXEluZGV4UHJvcGlldGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/ListaPapeletasNOPagadas_Valera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXExpc3RhUGFwZWxldGFzTk9QYWdhZGFzX1ZhbGVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/SAT/ListaPropietarios_Valera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU0FUXExpc3RhUHJvcGlldGFyaW9zX1ZhbGVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IDAT IV - 2024/Herramientas de Programación II/EC03 - Gustavo Valera/SlnClienteAPI_Valera/ClienteAPI_Valera/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mxwqdbwppd

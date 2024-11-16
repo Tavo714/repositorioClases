@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ClienteAPI_Valera.Models.ListarPropietariosPorInicial>
+
+@{
+    ViewData["Title"] = "ListaPropietarios_Valera";
+}
+
+<h1>ListaPropietarios_Valera</h1>
+<br/>
+
+<form>
+    <div>
+        Inicial: @Html.TextBox("inicial", "")
+        <button class="btn btn-primary">Consultar</button>
+    </div>
+</form>
+<br/>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Dnipro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nompro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Distrito)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dnipro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nompro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Distrito)
+            </td>
+            <td>
+                    @Html.ActionLink("Papeletas", "ListaPapeletasNOPagadas_Valera", new { dni = item.Dnipro, propietario = item.Nompro })
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <b>Total Propietarios: @ViewBag.TotalPropietarios</b>
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ServicioWebAPI_Valera.props" />
+</Project>
