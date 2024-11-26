@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8070" doc:name="HTTP Listener Configuration"/>
+	<db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" database="dbcomerciovmga" doc:name="MySQL Configuration"/>
+	<db:template-query name="Template_Query" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[insert into comprobante(nrocom,tipo,emision,codcli,importe) values (:nrocom,:tipo,:emision,:codcli,:importe)]]></db:parameterized-query>
+		<db:in-param name="nrocom" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;nrocom&quot;).toString())]"/>
+		<db:in-param name="tipo" type="VARCHAR" defaultValue="#[message.payload.get(&quot;tipo&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="emision" type="VARCHAR" defaultValue="#[message.payload.get(&quot;emision&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="codcli" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;codcli&quot;).toString())]"/>
+		<db:in-param name="importe" type="DOUBLE" defaultValue="#[Double.parseDouble(message.payload.get(&quot;importe&quot;).toString())]"/>
+	</db:template-query>
+	<flow name="ec3vmgaFlow">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/comprobante" allowedMethods="POST" doc:name="HTTP"/>
+		<json:json-to-object-transformer doc:name="JSON to Object"/>
+		<db:insert config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query"/>
+		</db:insert>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+</mule>

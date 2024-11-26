@@ -1,9 +1,5 @@
 package vo;
  
-/**
-*
-* @author Hans E. Delgado Diaz
-*/
 public class productovo {
     private int id_producto;
     private String nombre;
