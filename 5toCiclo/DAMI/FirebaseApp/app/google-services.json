@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444860454002",
+    "project_id": "idatandroid-c7a1b",
+    "storage_bucket": "idatandroid-c7a1b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444860454002:android:93bc41014e28696eed1eeb",
+        "android_client_info": {
+          "package_name": "com.example.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWeuR1G4Fk8ZgBmH64H3rgNfpWwNluZZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
