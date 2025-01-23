@@ -3431,3 +3431,227 @@ com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '"202
 *   JMX Agent                                                        *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2024-12-19 09:35:17,406 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ec3sjhh'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 09:35:17,917 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2024-12-19 09:35:18,116 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2024-12-19 09:35:18,270 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2024-12-19 09:35:18,270 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2024-12-19 09:35:18,462 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22aefae0: startup date [Thu Dec 19 09:35:18 COT 2024]; root of context hierarchy
+2024-12-19 09:35:20,487 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-12-19 09:35:22,013 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2024-12-19 09:35:22,802 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx2.log
+2024-12-19 09:35:22,903 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx2.log
+2024-12-19 09:35:23,088 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2024-12-19 09:35:23,104 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AgregarComprobante
+2024-12-19 09:35:23,104 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@31b7112d
+2024-12-19 09:35:23,136 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AgregarComprobante.stage1
+2024-12-19 09:35:23,588 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarImporteTotalPorFechas
+2024-12-19 09:35:23,588 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e2498a3
+2024-12-19 09:35:23,596 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 09:35:23,596 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarComprobantesPorCliente
+2024-12-19 09:35:23,596 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c552f08
+2024-12-19 09:35:23,596 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 09:35:23,596 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ActualizarComprobante
+2024-12-19 09:35:23,596 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@74f92d14
+2024-12-19 09:35:23,596 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ActualizarComprobante.stage1
+2024-12-19 09:35:23,849 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 09:35:23,849 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 09:35:23,854 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2024-12-19 09:35:23,864 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ec3sjhh'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 09:35:23,940 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2024-12-19 09:35:23,940 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2024-12-19 09:35:23,995 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8050
+2024-12-19 09:35:23,995 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2024-12-19 09:35:23,995 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AgregarComprobante
+2024-12-19 09:35:23,995 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AgregarComprobante.stage1
+2024-12-19 09:35:23,995 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarImporteTotalPorFechas
+2024-12-19 09:35:23,995 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 09:35:23,995 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarComprobantesPorCliente
+2024-12-19 09:35:23,995 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 09:35:24,011 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ActualizarComprobante
+2024-12-19 09:35:24,011 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ActualizarComprobante.stage1
+2024-12-19 09:35:24,091 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2024-12-19 09:35:24,110 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: ec3sjhh                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2024-12-19 15:45:34,279 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ec3sjhh'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 15:45:35,144 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2024-12-19 15:45:35,345 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2024-12-19 15:45:35,809 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2024-12-19 15:45:35,809 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2024-12-19 15:45:36,005 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@56b05bd7: startup date [Thu Dec 19 15:45:35 COT 2024]; root of context hierarchy
+2024-12-19 15:45:38,951 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-12-19 15:45:40,807 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2024-12-19 15:45:41,614 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx2.log
+2024-12-19 15:45:41,665 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx2.log
+2024-12-19 15:45:41,873 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2024-12-19 15:45:41,877 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AgregarComprobante
+2024-12-19 15:45:41,877 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@8b1bfdf
+2024-12-19 15:45:41,909 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AgregarComprobante.stage1
+2024-12-19 15:45:42,136 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarImporteTotalPorFechas
+2024-12-19 15:45:42,136 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2e1c5d1f
+2024-12-19 15:45:42,140 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 15:45:42,141 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarComprobantesPorCliente
+2024-12-19 15:45:42,141 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@589d831e
+2024-12-19 15:45:42,144 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 15:45:42,146 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ActualizarComprobante
+2024-12-19 15:45:42,146 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@68cb8e52
+2024-12-19 15:45:42,151 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ActualizarComprobante.stage1
+2024-12-19 15:45:42,416 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 15:45:42,416 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 15:45:42,421 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2024-12-19 15:45:42,439 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ec3sjhh'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 15:45:42,497 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2024-12-19 15:45:42,497 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2024-12-19 15:45:42,581 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8050
+2024-12-19 15:45:42,586 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2024-12-19 15:45:42,588 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AgregarComprobante
+2024-12-19 15:45:42,589 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AgregarComprobante.stage1
+2024-12-19 15:45:42,595 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarImporteTotalPorFechas
+2024-12-19 15:45:42,595 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 15:45:42,601 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarComprobantesPorCliente
+2024-12-19 15:45:42,601 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 15:45:42,606 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ActualizarComprobante
+2024-12-19 15:45:42,606 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ActualizarComprobante.stage1
+2024-12-19 15:45:42,731 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2024-12-19 15:45:42,768 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: ec3sjhh                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2024-12-19 16:33:03,976 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ec3sjhh'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 16:33:04,305 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2024-12-19 16:33:04,369 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2024-12-19 16:33:04,448 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2024-12-19 16:33:04,448 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2024-12-19 16:33:04,496 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22aefae0: startup date [Thu Dec 19 16:33:04 COT 2024]; root of context hierarchy
+2024-12-19 16:33:06,275 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-12-19 16:33:07,440 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2024-12-19 16:33:07,790 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx2.log
+2024-12-19 16:33:07,806 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx2.log
+2024-12-19 16:33:07,902 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2024-12-19 16:33:07,917 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AgregarComprobante
+2024-12-19 16:33:07,917 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@31b7112d
+2024-12-19 16:33:07,949 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AgregarComprobante.stage1
+2024-12-19 16:33:08,108 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarImporteTotalPorFechas
+2024-12-19 16:33:08,108 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e2498a3
+2024-12-19 16:33:08,108 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 16:33:08,108 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarComprobantesPorCliente
+2024-12-19 16:33:08,108 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c552f08
+2024-12-19 16:33:08,121 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 16:33:08,121 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ActualizarComprobante
+2024-12-19 16:33:08,121 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@74f92d14
+2024-12-19 16:33:08,124 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ActualizarComprobante.stage1
+2024-12-19 16:33:08,240 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 16:33:08,240 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 16:33:08,240 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2024-12-19 16:33:08,256 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ec3sjhh'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 16:33:08,280 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2024-12-19 16:33:08,283 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2024-12-19 16:33:08,328 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8050
+2024-12-19 16:33:08,333 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2024-12-19 16:33:08,335 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AgregarComprobante
+2024-12-19 16:33:08,335 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AgregarComprobante.stage1
+2024-12-19 16:33:08,339 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarImporteTotalPorFechas
+2024-12-19 16:33:08,339 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 16:33:08,342 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarComprobantesPorCliente
+2024-12-19 16:33:08,342 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 16:33:08,344 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ActualizarComprobante
+2024-12-19 16:33:08,344 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ActualizarComprobante.stage1
+2024-12-19 16:33:08,445 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2024-12-19 16:33:08,478 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: ec3sjhh                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2024-12-19 16:33:31,948 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'ec3sjhh'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 16:33:32,295 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2024-12-19 16:33:32,358 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2024-12-19 16:33:32,442 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2024-12-19 16:33:32,442 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2024-12-19 16:33:32,495 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22aefae0: startup date [Thu Dec 19 16:33:32 COT 2024]; root of context hierarchy
+2024-12-19 16:33:33,763 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2024-12-19 16:33:34,897 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2024-12-19 16:33:35,163 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-tx-log\tx2.log
+2024-12-19 16:33:35,175 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx1.log and D:\repositorioClases\5toCiclo\AOS\.mule\.\.mule\ec3sjhh\queue-xa-tx-log\tx2.log
+2024-12-19 16:33:35,272 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2024-12-19 16:33:35,275 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AgregarComprobante
+2024-12-19 16:33:35,275 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@31b7112d
+2024-12-19 16:33:35,303 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AgregarComprobante.stage1
+2024-12-19 16:33:35,487 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarImporteTotalPorFechas
+2024-12-19 16:33:35,489 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e2498a3
+2024-12-19 16:33:35,493 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 16:33:35,495 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ConsultarComprobantesPorCliente
+2024-12-19 16:33:35,495 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c552f08
+2024-12-19 16:33:35,500 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 16:33:35,500 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ActualizarComprobante
+2024-12-19 16:33:35,500 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@74f92d14
+2024-12-19 16:33:35,506 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ActualizarComprobante.stage1
+2024-12-19 16:33:35,653 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 16:33:35,653 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='D:\repositorioClases\5toCiclo\AOS\.mule\apps\ec3sjhh\ec3sjhh.xml'}]"
+2024-12-19 16:33:35,669 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2024-12-19 16:33:35,669 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'ec3sjhh'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2024-12-19 16:33:35,690 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2024-12-19 16:33:35,690 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2024-12-19 16:33:35,758 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8050
+2024-12-19 16:33:35,763 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2024-12-19 16:33:35,763 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AgregarComprobante
+2024-12-19 16:33:35,763 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AgregarComprobante.stage1
+2024-12-19 16:33:35,772 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarImporteTotalPorFechas
+2024-12-19 16:33:35,772 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarImporteTotalPorFechas.stage1
+2024-12-19 16:33:35,772 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ConsultarComprobantesPorCliente
+2024-12-19 16:33:35,772 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ConsultarComprobantesPorCliente.stage1
+2024-12-19 16:33:35,772 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ActualizarComprobante
+2024-12-19 16:33:35,772 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ActualizarComprobante.stage1
+2024-12-19 16:33:35,858 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2024-12-19 16:33:35,880 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: ec3sjhh                                               *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

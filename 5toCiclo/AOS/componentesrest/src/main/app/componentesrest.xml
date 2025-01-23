@@ -46,6 +46,11 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 		<db:in-param name="stopro" type="DOUBLE" defaultValue="#[Double.parseDouble(message.payload.get(&quot;stopro&quot;).toString())]"/>
 		<db:in-param name="frepro" type="VARCHAR" defaultValue="#[message.payload.get(&quot;frepro&quot;).toString().replaceAll('\&quot;','')]"/>
 	</db:template-query>
+	<db:template-query name="Template_Query5" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[select * from usuario where nicus=:nombre and pasus=:clave]]></db:parameterized-query>
+		<db:in-param name="nombre" type="VARCHAR" defaultValue="#[message.inboundProperties.'http.uri.params'.nombre]"/>
+		<db:in-param name="clave" type="VARCHAR" defaultValue="#[message.inboundProperties.'http.uri.params'.passw]"/>
+	</db:template-query>
 	<flow name="ListarProductos">
 		<http:listener config-ref="HTTP_Listener_Configuration" path="/Producto" allowedMethods="GET" doc:name="HTTP"/>
 		<db:select config-ref="MySQL_Configuration" doc:name="Database">
@@ -88,6 +93,13 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 		<db:update config-ref="MySQL_Configuration" doc:name="Database">
 			<db:template-query-ref name="Template_Query4"/>
 		</db:update>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+	<flow name="ValidarUsuario">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/Validar/{nombre}/{passw}" allowedMethods="GET" doc:name="HTTP"/>
+		<db:select config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query5"/>
+		</db:select>
 		<json:object-to-json-transformer doc:name="Object to JSON"/>
 	</flow>
 </mule>

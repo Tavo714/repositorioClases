@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+	<http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8077" doc:name="HTTP Listener Configuration"/>
+	<db:mysql-config name="MySQL_Configuration" host="localhost" port="3306" user="root" database="academico" doc:name="MySQL Configuration"/>
+	<db:template-query name="Template_Query" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[select * from trabajador where nictra=:nick and pastra=:pass]]></db:parameterized-query>
+		<db:in-param name="nick" type="VARCHAR" defaultValue="#[message.inboundProperties.'http.uri.params'.nickname]"/>
+		<db:in-param name="pass" type="VARCHAR" defaultValue="#[message.inboundProperties.'http.uri.params'.password]"/>
+	</db:template-query>
+	<db:template-query name="Template_Query1" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[insert into trabajador(dnitra,apetra,nomtra,codcar,nictra,pastra) values (:dnitra,:apetra,:nomtra,:codcar,:nictra,:pastra)]]></db:parameterized-query>
+		<db:in-param name="dnitra" type="VARCHAR" defaultValue="#[message.payload.get(&quot;dnitra&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="apetra" type="VARCHAR" defaultValue="#[message.payload.get(&quot;apetra&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="nomtra" type="VARCHAR" defaultValue="#[message.payload.get(&quot;nomtra&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="codcar" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;codcar&quot;).toString())]"/>
+		<db:in-param name="nictra" type="VARCHAR" defaultValue="#[message.payload.get(&quot;nictra&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="pastra" type="VARCHAR" defaultValue="#[message.payload.get(&quot;pastra&quot;).toString().replaceAll('\&quot;','')]"/>
+	</db:template-query>
+	<db:template-query name="Template_Query2" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[select * from trabajador where dnitra=:dni]]></db:parameterized-query>
+		<db:in-param name="dni" type="VARCHAR" defaultValue="#[message.inboundProperties.'http.uri.params'.codigo]"/>
+	</db:template-query>
+	<db:template-query name="Template_Query3" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[insert into matricula(fecmat,codesc,codtra,codest,codper,cicmat,turmat,impmat) values (:fecmat,:codesc,:codtra,:codest,:codper,:cicmat,:turmat,:impmat)]]></db:parameterized-query>
+		<db:in-param name="fecmat" type="VARCHAR" defaultValue="#[message.payload.get(&quot;fecmat&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="codesc" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;codesc&quot;).toString())]"/>
+		<db:in-param name="codtra" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;codtra&quot;).toString())]"/>
+		<db:in-param name="codest" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;codest&quot;).toString())]"/>
+		<db:in-param name="codper" type="VARCHAR" defaultValue="#[message.payload.get(&quot;codper&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="cicmat" type="INTEGER" defaultValue="#[Integer.parseInt(message.payload.get(&quot;cicmat&quot;).toString())]"/>
+		<db:in-param name="turmat" type="VARCHAR" defaultValue="#[message.payload.get(&quot;turmat&quot;).toString().replaceAll('\&quot;','')]"/>
+		<db:in-param name="impmat" type="DOUBLE" defaultValue="#[Double.parseDouble(message.payload.get(&quot;impmat&quot;).toString())]"/>
+	</db:template-query>
+	<db:template-query name="Template_Query4" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[select * from matricula where codmat=:codigo]]></db:parameterized-query>
+		<db:in-param name="codigo" type="INTEGER" defaultValue="#[message.inboundProperties.'http.uri.params'.codigo]"/>
+	</db:template-query>
+	<db:template-query name="Template_Query5" doc:name="Template Query">
+		<db:parameterized-query><![CDATA[SELECT * FROM matricula WHERE periodo=:periodo AND escuela=:escuela AND ciclo=:ciclo AND turno=:turno;]]></db:parameterized-query>
+		<db:in-param name="periodo" type="INTEGER" defaultValue="#[message.inboundProperties.'http.uri.params'.periodo]"/>
+		<db:in-param name="escuela" type="INTEGER" defaultValue="#[message.inboundProperties.'http.uri.params'.escuela]"/>
+		<db:in-param name="ciclo" type="INTEGER" defaultValue="#[message.inboundProperties.'http.uri.params'.ciclo]"/>
+		<db:in-param name="turno" type="INTEGER" defaultValue="#[attributes.uriParams.turno.trim()]"/>
+	</db:template-query>
+	<flow name="ValidarUsuario">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/validar/{nickname}/{password}" allowedMethods="GET" doc:name="HTTP"/>
+		<db:select config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query"/>
+		</db:select>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+	<flow name="RegistrarTrabajador">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/registrotrabajador" allowedMethods="POST" doc:name="HTTP"/>
+		<json:json-to-object-transformer doc:name="JSON to Object"/>
+		<db:insert config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query1"/>
+		</db:insert>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+	<flow name="BuscarTrabajador">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/buscartrabajador/{codigo}" allowedMethods="GET" doc:name="HTTP"/>
+		<db:select config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query2"/>
+		</db:select>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+	<flow name="RegistrarMatricula">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/registromatricula" allowedMethods="POST" doc:name="HTTP"/>
+		<json:json-to-object-transformer doc:name="JSON to Object"/>
+		<db:insert config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query3"/>
+		</db:insert>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+	<flow name="BuscarMatricula">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/buscarmatricula/{codigo}" allowedMethods="GET" doc:name="HTTP"/>
+		<db:select config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query4"/>
+		</db:select>
+		<json:object-to-json-transformer doc:name="Object to JSON"/>
+	</flow>
+	<flow name="FiltrarMatricula">
+		<http:listener config-ref="HTTP_Listener_Configuration" path="/filtrarmatricula/{periodo}/{escuela}/{ciclo}/{turno}" allowedMethods="GET" doc:name="HTTP"/>
+		<db:select config-ref="MySQL_Configuration" doc:name="Database">
+			<db:template-query-ref name="Template_Query5"/>
+		</db:select>
+		<json:json-to-object-transformer doc:name="JSON to Object"/>
+	</flow>
+</mule>

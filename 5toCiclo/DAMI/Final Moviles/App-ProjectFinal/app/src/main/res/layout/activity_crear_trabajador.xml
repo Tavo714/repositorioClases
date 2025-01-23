@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCrearTrabajador"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="   Crear Trabajador"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@color/purple_500"/>
+
+        <!-- Campo para nombre -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:helperText="Ingresa el nombre del trabajador">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo para apellido -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:helperText="Ingresa el apellido">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo para DNI -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:helperText="Ingresa un DNI válido (8 dígitos)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DNI"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Fecha de Nacimiento -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:helperText="Selecciona la fecha de nacimiento">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Nacimiento" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Fecha de Ingreso -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFechaIng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:helperText="Selecciona la fecha de ingreso">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtFechaIng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Ingreso" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Puesto -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPuesto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            app:helperText="Ingresa el puesto">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPuesto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Puesto" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Botones -->
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="Guardar" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Cancelar" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+

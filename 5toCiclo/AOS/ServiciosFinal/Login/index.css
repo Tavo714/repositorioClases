@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: mi-tipografia, sans-serif;
+    color: #ffff;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(fondo-estrellado.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.login__titulo{
+    font-size: 3em;
+    text-align: center;
+    color: inherit;
+    text-decoration: underline;
+}
+.login__contenedor{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    width: 500px;
+    height: 400px;
+    border-radius: 1em;
+    box-shadow: 0px 0px 15px 5px #eee;
+    border: 1px solid #0d31d1;
+}
+.login__formgroup{
+    position: relative;
+    margin: 30px;
+}
+.login__input{
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    border-bottom: #747272 solid 4px;
+    border-radius: 5px;
+    
+}
+.login__input:focus {
+    border-bottom: 4px solid #e2bbbbd3; /* El borde solo aparece cuando el input está en foco */
+}
+.login__label i{
+    position: absolute;
+    left: -50px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #747272;
+}
+/* Posiciona los íconos a la derecha */
+.login__label #ojo,
+.login__label #ojo-tachado {
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#ojo-tachado{
+    display: none;
+}
+
+.login__label span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #c1cecefb;
+    transition: all 0.6s ease;
+}
+.login__input::placeholder {
+    color: transparent;
+    transition: color 0.3s ease;  
+}
+
+/* Cambiar el color del placeholder cuando el input está enfocado */
+.login__input:focus::placeholder {
+    color: #c1cecefb;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.login__input:focus ~ span,
+.login__input:valid ~ span{
+    top: -10px;
+    font-size: 1.2rem;
+    color: #c1cecefb;
+}
+
+#recordar{
+    width: auto;
+}
+p{
+    font-size: larger;
+    text-align: center;
+}
+.input--link{
+    text-decoration: none;
+    border: none;
+    transition: .3s;
+
+}
+.input--link:focus{
+    border: none; 
+}
+.input--link:hover{
+    transition: .8s;
+    color: #077973;
+    text-decoration: underline;
+}
+.boton--acceder{
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    height: 2em;
+    border-radius: 10px;
+    border: none;
+    font-size: inherit;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 10px #22a6f2ae;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.boton--acceder:hover{
+    color: inherit;
+    opacity: 0.9;
+    background: transparent;
+}
+
+

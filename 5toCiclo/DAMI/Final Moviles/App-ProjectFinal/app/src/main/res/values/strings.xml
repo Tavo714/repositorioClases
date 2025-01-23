@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App-Final</string>
+    <string name="volver">Volver</string>
+    <string name="crear_trabajador">Crear Trabajador</string>
+</resources>

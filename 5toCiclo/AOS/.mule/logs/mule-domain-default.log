@@ -1,344 +1,288 @@
-INFO  2024-11-24 10:30:01,942 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 01:53:26,882 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 10:30:01,944 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 01:53:26,882 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 10:34:18,113 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 04:07:42,133 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 10:34:18,114 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 04:07:42,135 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 11:08:41,369 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 12:33:45,437 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 11:08:41,370 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 12:33:45,438 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 11:59:41,464 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:07:27,692 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 11:59:41,464 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:07:27,693 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 12:20:53,011 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:09:11,225 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 12:20:53,012 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:09:11,225 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 12:44:50,395 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:17:09,405 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 12:44:50,396 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:17:09,405 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:36:29,117 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:54:34,960 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:36:29,117 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:54:34,960 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:38:40,844 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:59:19,074 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:38:40,846 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 13:59:19,074 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:43:16,857 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:17:05,813 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:43:16,859 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:17:05,813 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:50:45,679 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:33:36,343 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:50:45,679 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:33:36,343 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:56:25,543 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:34:23,273 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 14:56:25,545 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:34:23,273 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:03:54,023 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:41:24,313 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:03:54,023 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 14:41:24,313 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:05:39,412 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:09:53,189 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:05:39,412 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:09:53,189 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:25:21,271 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:13:42,439 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:25:21,273 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:13:42,440 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:27:10,992 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:16:56,310 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:27:10,994 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:16:56,310 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:30:22,984 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:19:11,316 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:30:22,985 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:19:11,316 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:31:42,642 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:22:54,829 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:31:42,643 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:22:54,831 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:33:59,598 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:24:10,019 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:33:59,599 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:24:10,019 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:38:12,927 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:27:42,743 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 15:38:12,927 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:27:42,743 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:10:28,256 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:29:47,765 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:10:28,258 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:29:47,767 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:10:55,472 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:32:56,393 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:10:55,474 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:32:56,395 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:36:07,875 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:35:05,455 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:36:07,876 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:35:05,455 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:43:19,005 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:38:32,273 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:43:19,007 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:38:32,275 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:53:29,930 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:41:34,443 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 16:53:29,930 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:41:34,443 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:13:32,352 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:46:50,974 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:13:32,352 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:46:50,974 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:20:29,264 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:49:07,551 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:20:29,264 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:49:07,553 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:24:13,763 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:57:04,987 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:24:13,763 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 15:57:04,987 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:28:30,189 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:04:01,805 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:28:30,190 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:04:01,805 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:29:38,943 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:10:42,489 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:29:38,943 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:10:42,489 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:31:05,120 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:53:06,566 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:31:05,120 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:53:06,566 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:32:44,465 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:54:35,152 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:32:44,467 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:54:35,152 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:33:56,884 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:57:58,087 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:33:56,884 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 16:57:58,087 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:36:30,876 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 20:25:48,235 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:36:30,876 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 20:25:48,236 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:38:24,230 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 20:38:19,464 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:38:24,230 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 20:38:19,465 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:42:05,694 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 20:39:29,206 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:42:05,695 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 20:39:29,207 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:42:50,690 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 21:05:28,569 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + New domain 'default'                                     +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:42:50,690 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:45:32,960 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:45:32,961 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:46:50,928 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:46:50,929 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:48:44,850 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:48:44,850 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:50:41,403 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:50:41,404 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:51:51,042 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:51:51,042 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:54:45,318 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:54:45,320 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ Initializing domain 'default'                            +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:57:51,387 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+ New domain 'default'                                     +
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-INFO  2024-11-24 19:57:51,387 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+INFO  2024-12-20 21:05:28,570 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 + Initializing domain 'default'                            +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

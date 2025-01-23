@@ -1,0 +1,41 @@
+[ {
+  "idproducto" : 1,
+  "nompro" : "Laptop Dell",
+  "despro" : "Laptop de alto rendimiento",
+  "cantidad" : 10,
+  "precio" : 1500.0,
+  "idcategoria" : 1,
+  "idproveedor" : 1
+}, {
+  "idproducto" : 2,
+  "nompro" : "iPhone 14",
+  "despro" : "Smartphone de última generación",
+  "cantidad" : 20,
+  "precio" : 1200.0,
+  "idcategoria" : 2,
+  "idproveedor" : 2
+}, {
+  "idproducto" : 3,
+  "nompro" : "Teclado Mecánico",
+  "despro" : "Teclado con iluminación RGB",
+  "cantidad" : 50,
+  "precio" : 80.0,
+  "idcategoria" : 3,
+  "idproveedor" : 3
+}, {
+  "idproducto" : 4,
+  "nompro" : "Disco SSD 1TB",
+  "despro" : "Unidad de almacenamiento sólida",
+  "cantidad" : 15,
+  "precio" : 100.0,
+  "idcategoria" : 4,
+  "idproveedor" : 1
+}, {
+  "idproducto" : 5,
+  "nompro" : "Router WiFi 6",
+  "despro" : "Router de alta velocidad",
+  "cantidad" : 30,
+  "precio" : 200.0,
+  "idcategoria" : 5,
+  "idproveedor" : 2
+} ]

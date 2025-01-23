@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "654584885434",
+    "project_id": "idatpersonal",
+    "storage_bucket": "idatpersonal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654584885434:android:40f47b66dc8d813bdb5283",
+        "android_client_info": {
+          "package_name": "com.pixelpulse.app_final"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC--ORxplAURtkC7K92GPcEvzDncLr3tgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
