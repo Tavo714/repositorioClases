@@ -25,7 +25,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text='Lorem ipsum dolor sit amet consectetur adipiscing elit magnis ullamcorper, est arcu per primis torquent pulvinar nam vehicula, urna bibendum vulputate dui curabitur semper phasellus netus. Nec ut platea fusce ultricies phasellus integer blandit condimentum, risus aliquet nascetur nunc primis hendrerit habitant ridiculus mauris, sodales luctus sagittis proin cum ligula torquent. Sed suscipit litora platea ornare molestie in quis, vel luctus imperdiet sociis magna dictumst pharetra nulla, orci ut curae interdum habitant id.'
             android:textAlignment="center"
