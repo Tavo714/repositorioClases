@@ -43,6 +43,7 @@
             android:layout_height="wrap_content"
             android:hint="Nombre del empleado"
             android:inputType="text"
+            android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
             android:padding="8dp"/>
 
@@ -52,6 +53,7 @@
             android:layout_height="wrap_content"
             android:hint="Horas trabajadas"
             android:inputType="numberDecimal"
+            android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
             android:padding="8dp"/>
 
@@ -61,6 +63,7 @@
             android:layout_height="wrap_content"
             android:hint="Tarifa por hora"
             android:inputType="numberDecimal"
+            android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
             android:padding="8dp"/>
     </LinearLayout>
