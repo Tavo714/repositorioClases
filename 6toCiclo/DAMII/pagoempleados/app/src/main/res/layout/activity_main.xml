@@ -3,15 +3,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PAGO DE EMPLEADOS"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textAlignment="center"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#FF9800"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="4dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese los datos del empleado"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del empleado"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/etHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horas trabajadas"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/etTarifa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tarifa por hora"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,241 +71,63 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Empleado: "
-            android:textSize="18sp"/>
-
-        <EditText
-            android:id="@+id/etEmpleado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Ingrese nombre del empleado"
-            android:inputType="text" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="H. Trabajadas: "
-            android:textSize="18sp"/>
-
-        <EditText
-            android:id="@+id/etHoras"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Ingrese las Horas Trabajadas"
-            android:inputType="text" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="T. Hora: "
-            android:textSize="18sp"/>
-
-        <EditText
-            android:id="@+id/etTarifa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Ingrese la tarifa por hora"
-            android:inputType="text" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-
         <Button
             android:id="@+id/btnProcesar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Procesar" />
+            android:text="Procesar"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:id="@+id/btnLimpiar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Limpiar" />
+            android:text="Limpiar"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="4dp"
+
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvEmpleado"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Empleado: "
-            android:textSize="18sp" />
+            android:text="Resultados"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:paddingBottom="8dp"/>
 
-        <TextView
-            android:id="@+id/tvEmpleadoIngresado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Empleado:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvEmpleadoIngresado" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
 
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Horas trabajadas:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvTotalHoras" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tarifa por hora:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvTotalTarifa" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sueldo Bruto:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvTotalSueldoBruto" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Descuento Essalud:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvTotalEssalud" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Descuento AFP:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvTotalAFP" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sueldo Neto:" android:textSize="16sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvTotalSueldoNeto" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvHoras"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Horas Trabajadas: "
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvTotalHoras"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvTarifa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Tarifa por hora: "
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvTotalTarifa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvSueldoBruto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Sueldo Bruto: "
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvTotalSueldoBruto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-    <TextView
-        android:id="@+id/tvDescuentoEssalud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Descuento Essalud: "
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/tvTotalEssalud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="20sp"/>
-
-</LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvDescuentoAFP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Descuento AFP: "
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvTotalAFP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tvSueldoNeto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SUELDO NETO: "
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/tvTotalSueldoNeto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
 </LinearLayout>
