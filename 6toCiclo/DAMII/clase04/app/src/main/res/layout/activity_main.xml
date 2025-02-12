@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:text="Uso de Activities"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/blue"
+            android:text="Uso de Activities Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis laoreet luctus. Nulla pellentesque metus quis fringilla ultrices. Sed a erat mollis, mattis massa ac, volutpat elit. Pellentesque imperdiet diam eu felis viverra volutpat. Suspendisse purus neque, elementum ac lacus a, mollis interdum nunc. Phasellus fermentum ac velit eu aliquet. Curabitur at euismod nisl. Phasellus id lacinia arcu. Ut fringilla volutpat condimentum. Aenean commodo tincidunt diam sed mollis."/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/illidan_menos"/>
+
+            <Button
+                android:id="@+id/btn01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lenguajes"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
