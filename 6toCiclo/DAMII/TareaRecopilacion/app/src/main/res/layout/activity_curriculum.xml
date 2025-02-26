@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CurriculumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/blue">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.70"
+                    android:src="@drawable/foto"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gustavo Andres Valera Mendoza"
+                    android:layout_weight="0.15"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Stack Developer - Movil Developer"
+                    android:layout_weight="0.15"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="TECNOLOGIAS"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp">
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minHeight="300dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_period="1000"
+                        app:iss_delay="1000"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="SOBRE MI..."
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Soy un programador aficionado a la tecnologia. Busco cada dia nuevas maneras de incrementar mis conocimientos. A su vez, soy tambien un Administrador de Empresas (Titulado) por lo que mi meta con la programacion es hacer mis propios sistemas que me permitan facilitar la vida de mis futuros usuarios."
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="Mi meta es crear aplicaciones que promuevan el desarrollo en todos los ambitos: empresarial, cultural y social. Se que con mis conocimientos en administracion puedo crear sistemas de informacion y gestion eficientes que ayuden a las empresas a tener control absoluto -y seguro- de su informacion. Tambien tengo la capacidad de crear aplicaciones que faciliten la vida de mis usuarios pues, en realidad, hay bastante aun por hacer desde la tecnologia."
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="PROYECTOS"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCuentos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cuenta Cuentos"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <Button
+                    android:id="@+id/btnCasaCambios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Casa de Cambios"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <Button
+                    android:id="@+id/btnPlanillas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Planillas"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp"/>
+
+                <Button
+                    android:id="@+id/btnProgramador"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pago a Programador"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
