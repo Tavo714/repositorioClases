@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvConfirmarEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Seguro que desea eliminar este cliente?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnEliminarConfirmado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/btnCancelarEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

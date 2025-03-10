@@ -21,7 +21,6 @@ public class Taller implements Serializable{
 	
 	@OneToOne
 	@JoinColumn(name="instructor_id",nullable=false,foreignKey=@ForeignKey(foreignKeyDefinition="foreign key(instructor_id) references instructores(instructor_id)"))
-	
 	private Instructor instructor;
 	
 	public Taller() {

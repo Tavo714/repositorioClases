@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvResumenCambios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Confirmar cambios?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnContinuarEdicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"/>
+
+    <Button
+        android:id="@+id/btnRegresarEdicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

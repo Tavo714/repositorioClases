@@ -17,8 +17,7 @@ public class Conyuge implements Serializable{
 	
 			
 	@OneToOne
-	@JoinColumn(name="instructor_id",nullable=false,unique=true, foreignKey=@ForeignKey(foreignKeyDefinition="foreign key(instructor_id) references instructores(instructor_id)"))
-	
+	@JoinColumn(name="instructor_id",nullable=false,unique=true, foreignKey=@ForeignKey(foreignKeyDefinition="foreign key(instructor_id) references instructores(instructor_id)"))	
 	private Instructor instructor;
 	
 	public Conyuge() {

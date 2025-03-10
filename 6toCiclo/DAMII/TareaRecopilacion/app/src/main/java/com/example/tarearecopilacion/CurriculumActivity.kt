@@ -2,69 +2,77 @@ package com.example.tarearecopilacion
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 
 class CurriculumActivity : AppCompatActivity() {
+
+    private var isSobreMiVisible = false
+    private var isProyectosVisible = false
+    private var isCursosVisible = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_curriculum)
 
-        val cuentos: (Button) = findViewById(R.id.btnCuentos)
-        cuentos.setOnClickListener {
-            val intent = Intent(this, CuentacuentosActivity::class.java)
-            startActivity(intent)
+        // Configuración de los botones de los proyectos
+        findViewById<Button>(R.id.btnCuentos).setOnClickListener {
+            startActivity(Intent(this, CuentacuentosActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnCasaCambios).setOnClickListener {
+            startActivity(Intent(this, CasacambiosActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnPlanillas).setOnClickListener {
+            startActivity(Intent(this, PlanillaActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnProgramador).setOnClickListener {
+            startActivity(Intent(this, ProgramaorActivity::class.java))
         }
 
-        val cambios: (Button) = findViewById(R.id.btnCasaCambios)
-        cambios.setOnClickListener {
-            val intent = Intent(this, CasacambiosActivity::class.java)
-            startActivity(intent)
-        }
-
-        val planillas: (Button) = findViewById(R.id.btnPlanillas)
-        planillas.setOnClickListener {
-            val intent = Intent(this, PlanillaActivity::class.java)
-            startActivity(intent)
-        }
-
-        val programador: (Button) = findViewById(R.id.btnProgramador)
-        programador.setOnClickListener {
-            val intent = Intent(this, ProgramaorActivity::class.java)
-            startActivity(intent)
-        }
-
-        val imageList = ArrayList<SlideModel>() // Create image list
-
-// imageList.add(SlideModel("String Url" or R.drawable)
-// imageList.add(SlideModel("String Url" or R.drawable, "title") You can add title
-
-        /* version con imagenes desde la web
-        imageList.add(SlideModel("https://bit.ly/2YoJ77H", "The animal population decreased by 58 percent in 42 years."))
-        imageList.add(SlideModel("https://bit.ly/2BteuF2", "Elephants and tigers may become extinct."))
-        imageList.add(SlideModel("https://bit.ly/3fLJf72", "And people do that."))
-        */
-
-        imageList.add(SlideModel(R.drawable.androidstudio, "Para programar aplicaciones nativas Android", ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.firebase, "Para tener un backend solido y con respaldo global", ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.react, "Para desarrollo facil y reestructurable de proyectos web", ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.angular, "Para desarrollo de Interfaces empresariales de alto nivel", ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.tailwind, "Para un diseño web elegante en pocos pasos", ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.java, "Para la construccion de un Backend solido y con soporte", ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.springboot, "Para implementar capas de seguridad y excelente manejo de base de datos", ScaleTypes.FIT))
-
-
-
+        // Configuración del ImageSlider
         val imageSlider = findViewById<ImageSlider>(R.id.image_slider)
+        val imageList = arrayListOf(
+            SlideModel(R.drawable.androidstudio, ScaleTypes.FIT),
+            SlideModel(R.drawable.firebase, ScaleTypes.FIT),
+            SlideModel(R.drawable.react,ScaleTypes.FIT),
+            SlideModel(R.drawable.angular,ScaleTypes.FIT),
+            SlideModel(R.drawable.tailwind, ScaleTypes.FIT),
+            SlideModel(R.drawable.java, ScaleTypes.FIT),
+            SlideModel(R.drawable.springboot, ScaleTypes.FIT)
+        )
         imageSlider.setImageList(imageList)
 
+        // Configuración del menú desplegable "Sobre Mí"
+        val btnSobreMi: TextView = findViewById(R.id.btnSobreMi)
+        val layoutSobreMi: LinearLayout = findViewById(R.id.layoutSobreMi)
+        btnSobreMi.setOnClickListener {
+            isSobreMiVisible = !isSobreMiVisible
+            layoutSobreMi.visibility = if (isSobreMiVisible) View.VISIBLE else View.GONE
+            btnSobreMi.text = if (isSobreMiVisible) "SOBRE MÍ ▲" else "SOBRE MÍ ▼"
+        }
 
+        // Configuración del menú desplegable "Proyectos Destacados"
+        val btnProyectos: TextView = findViewById(R.id.btnProyectos)
+        val layoutProyectos: LinearLayout = findViewById(R.id.layoutProyectos)
+        btnProyectos.setOnClickListener {
+            isProyectosVisible = !isProyectosVisible
+            layoutProyectos.visibility = if (isProyectosVisible) View.VISIBLE else View.GONE
+            btnProyectos.text = if (isProyectosVisible) "PROYECTOS DESTACADOS ▲" else "PROYECTOS DESTACADOS ▼"
+        }
+
+        // Configuración del menú desplegable "Cursos Actuales"
+        val btnCursos: TextView = findViewById(R.id.btnCursos)
+        val layoutCursos: LinearLayout = findViewById(R.id.layoutCursos)
+        btnCursos.setOnClickListener {
+            isCursosVisible = !isCursosVisible
+            layoutCursos.visibility = if (isCursosVisible) View.VISIBLE else View.GONE
+            btnCursos.text = if (isCursosVisible) "CURSOS ACTUALES ▲" else "CURSOS ACTUALES ▼"
+        }
     }
 }
