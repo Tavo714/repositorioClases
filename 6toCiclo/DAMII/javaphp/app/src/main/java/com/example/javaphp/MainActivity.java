@@ -8,8 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
@@ -22,8 +20,10 @@ public class MainActivity extends AppCompatActivity {
     ClienteAdapter adapter;
     List<Cliente> clientes;
     RequestQueue requestQueue;
-    Button btnAgregarCliente;  // BOTÓN PARA AGREGAR CLIENTE
-    private static final String URL_LISTAR = "http://10.0.2.2/DAMII_java_php_mysql/listar.php"; // Para emulador
+    Button btnAgregarCliente;
+
+    private static final String URL_LISTAR = Config.getServerURL() + "listar.php";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         clientes = new ArrayList<>();
-        adapter = new ClienteAdapter(clientes);
+        adapter = new ClienteAdapter(this, clientes);
         recyclerView.setAdapter(adapter);
         requestQueue = Volley.newRequestQueue(this);
 
-        btnAgregarCliente = findViewById(R.id.btnAgregarCliente); // VINCULAR BOTÓN
+        btnAgregarCliente = findViewById(R.id.btnAgregarCliente);
         btnAgregarCliente.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AgregarActivity.class);
             startActivity(intent);
@@ -49,11 +49,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        listarClientes(); // Cargar la lista nuevamente al regresar
+        listarClientes();
     }
-
-
-
 
     private void listarClientes() {
         JsonObjectRequest request = new JsonObjectRequest(
@@ -80,10 +77,9 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 },
-                error -> error.printStackTrace()
+                Throwable::printStackTrace
         );
 
         requestQueue.add(request);
     }
 }
-

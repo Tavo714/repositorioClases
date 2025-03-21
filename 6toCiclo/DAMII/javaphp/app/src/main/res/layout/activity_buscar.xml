@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/etDniBuscar"
+        android:id="@+id/etDni"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese DNI"
@@ -45,7 +45,7 @@
         android:layout_marginTop="8dp"/>
 
     <Button
-        android:id="@+id/btnVolverBuscar"
+        android:id="@+id/btnVolver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Volver"

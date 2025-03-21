@@ -23,7 +23,9 @@ public class EditarActivity extends AppCompatActivity {
     String dni;
     RequestQueue requestQueue;
 
-    private static final String URL_EDITAR = "http://10.0.2.2/DAMII_java_php_mysql/editar.php";
+    private static final String URL_EDITAR = Config.getServerURL() + "editar.php";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

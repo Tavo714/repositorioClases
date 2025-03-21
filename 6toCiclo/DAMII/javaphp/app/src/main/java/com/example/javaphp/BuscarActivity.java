@@ -18,12 +18,13 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONObject;
 
 public class BuscarActivity extends AppCompatActivity {
-    EditText etDniBuscar;
+    EditText etDni;
     Button btnBuscar, btnEditar, btnEliminar, btnVolver;
     TextView tvResultado;
     RequestQueue requestQueue;
 
-    private static final String URL_BUSCAR = "http://10.0.2.2/DAMII_java_php_mysql/buscar.php?dni=";
+    private static final String URL_BUSCAR = Config.getServerURL() + "buscar.php?dni=";
+
 
     String dniEncontrado, nombre, correo, telefono, fecha, latitud, longitud;
 
@@ -32,14 +33,23 @@ public class BuscarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar);
 
-        etDniBuscar = findViewById(R.id.etDniBuscar);
+        etDni = findViewById(R.id.etDni);
         btnBuscar = findViewById(R.id.btnBuscar);
         btnEditar = findViewById(R.id.btnEditar);
         btnEliminar = findViewById(R.id.btnEliminar);
-        btnVolver = findViewById(R.id.btnVolverBuscar);
+        btnVolver = findViewById(R.id.btnVolver);
         tvResultado = findViewById(R.id.tvResultado);
 
+        btnEditar.setVisibility(View.GONE);
+        btnEliminar.setVisibility(View.GONE);
+
         requestQueue = Volley.newRequestQueue(this);
+
+        String dniRecibido = getIntent().getStringExtra("dni");
+        if (dniRecibido != null) {
+            etDni.setText(dniRecibido);
+            buscarCliente();
+        }
 
         btnBuscar.setOnClickListener(v -> buscarCliente());
         btnEditar.setOnClickListener(v -> editarCliente());
@@ -48,7 +58,7 @@ public class BuscarActivity extends AppCompatActivity {
     }
 
     private void buscarCliente() {
-        String dni = etDniBuscar.getText().toString().trim();
+        String dni = etDni.getText().toString().trim();
 
         if (dni.isEmpty()) {
             Toast.makeText(this, "Ingrese un DNI", Toast.LENGTH_SHORT).show();
@@ -78,7 +88,8 @@ public class BuscarActivity extends AppCompatActivity {
                                             "Teléfono: " + telefono + "\n" +
                                             "Fecha: " + fecha + "\n" +
                                             "Latitud: " + latitud + "\n" +
-                                            "Longitud: " + longitud);
+                                            "Longitud: " + longitud
+                            );
 
                             tvResultado.setVisibility(View.VISIBLE);
                             btnEditar.setVisibility(View.VISIBLE);
@@ -115,4 +126,3 @@ public class BuscarActivity extends AppCompatActivity {
         dialog.show(getSupportFragmentManager(), "EliminarClienteDialog");
     }
 }
-

@@ -30,7 +30,8 @@ public class AgregarActivity extends AppCompatActivity {
     Button btnRegistrar, btnVolver;
     ImageView btnCalendario, btnUbicacion;
     RequestQueue requestQueue;
-    private static final String URL_REGISTRO = "http://10.0.2.2/DAMII_java_php_mysql/registro.php"; // Para emulador
+    private static final String URL_REGISTRO = Config.getServerURL() + "registro.php";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

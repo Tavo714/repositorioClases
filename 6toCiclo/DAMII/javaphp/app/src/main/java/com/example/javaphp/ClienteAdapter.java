@@ -1,17 +1,23 @@
 package com.example.javaphp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHolder> {
-    private List<Cliente> clientes;
+    private final List<Cliente> clientes;
+    private final Context context;
 
-    public ClienteAdapter(List<Cliente> clientes) {
+    public ClienteAdapter(Context context, List<Cliente> clientes) {
+        this.context = context;
         this.clientes = clientes;
     }
 
@@ -25,13 +31,14 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Cliente cliente = clientes.get(position);
+        holder.tvNombre.setText(cliente.getNombre());
         holder.tvDni.setText("DNI: " + cliente.getDni());
-        holder.tvNombre.setText("Nombre: " + cliente.getNombre());
-        holder.tvCorreo.setText("Correo: " + cliente.getCorreo());
-        holder.tvTelefono.setText("Teléfono: " + cliente.getTelefono());
-        holder.tvFecha.setText("Fecha: " + cliente.getFechaNacimiento());
-        holder.tvLatitud.setText("Latitud: " + cliente.getLatitud());
-        holder.tvLongitud.setText("Longitud: " + cliente.getLongitud());
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, BuscarActivity.class);
+            intent.putExtra("dni", cliente.getDni());
+            context.startActivity(intent);
+        });
     }
 
     @Override
@@ -40,18 +47,12 @@ public class ClienteAdapter extends RecyclerView.Adapter<ClienteAdapter.ViewHold
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tvDni, tvNombre, tvCorreo, tvTelefono, tvFecha, tvLatitud, tvLongitud;
+        TextView tvNombre, tvDni;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvDni = itemView.findViewById(R.id.tvDni);
             tvNombre = itemView.findViewById(R.id.tvNombre);
-            tvCorreo = itemView.findViewById(R.id.tvCorreo);
-            tvTelefono = itemView.findViewById(R.id.tvTelefono);
-            tvFecha = itemView.findViewById(R.id.tvFecha);
-            tvLatitud = itemView.findViewById(R.id.tvLatitud);
-            tvLongitud = itemView.findViewById(R.id.tvLongitud);
+            tvDni = itemView.findViewById(R.id.tvDni);
         }
     }
 }
-
