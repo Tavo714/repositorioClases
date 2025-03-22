@@ -86,7 +86,4 @@ public class Prestamo {
 		this.cliente = cliente;
 	}
 
-    // Getters y setters (o usa @Data de Lombok si lo tienes activado)
-    
-    
 }

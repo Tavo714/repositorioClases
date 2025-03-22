@@ -2,6 +2,8 @@ package com.example.payload;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class AuthenticationRegister {
 
     private String dnicliente;
@@ -9,7 +11,6 @@ public class AuthenticationRegister {
     private String apellidos;
     private String domicilio;
     private String clave;
-
     private LocalDate fechaNacimiento;
     private LocalDate fechaRegistro;
 

@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 
 @Entity
@@ -16,7 +17,6 @@ public class Cliente {
     private String apellidos;
     private String nombre;
     private String domicilio;
-
     private LocalDate fechaNacimiento;
     private LocalDate fechaRegistro;
 

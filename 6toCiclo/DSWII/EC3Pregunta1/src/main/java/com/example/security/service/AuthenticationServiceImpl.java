@@ -40,6 +40,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         cliente.setNombre(request.getNombre());
         cliente.setApellidos(request.getApellidos());
         cliente.setDomicilio(request.getDomicilio());
+        cliente.setFechaNacimiento(request.getFechaNacimiento());
         cliente.setClave(passwordEncoder.encode(request.getClave()));
         cliente.setFechaRegistro(LocalDate.now());
         cliente.setEstado(true);

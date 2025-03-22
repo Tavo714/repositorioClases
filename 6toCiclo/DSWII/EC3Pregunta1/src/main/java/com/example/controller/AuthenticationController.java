@@ -18,8 +18,10 @@ public class AuthenticationController {
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody AuthenticationRegister request) {
+        System.out.println("Datos recibidos en el registro: " + request);
         return ResponseEntity.ok(authenticationService.register(request));
     }
+
 
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> login(@RequestBody AuthenticationLogin request) {
