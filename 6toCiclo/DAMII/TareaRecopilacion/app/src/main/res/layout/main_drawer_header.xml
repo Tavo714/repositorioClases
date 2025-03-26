@@ -17,16 +17,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Venta de Equipos"
+            android:text="Desarrollador Full Stack"
             android:textStyle="bold"
-            android:textColor="@color/red"/>
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="20dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="https://www.idat.pe"
-            android:textStyle="bold"
-            android:textColor="@color/blue"/>
 
     </LinearLayout>
 
