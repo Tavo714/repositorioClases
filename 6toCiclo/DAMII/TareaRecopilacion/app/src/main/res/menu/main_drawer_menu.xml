@@ -27,5 +27,12 @@
             android:icon="@drawable/ic_programador"
             android:title="Programador" />
 
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_location"
+            android:title="Mapa" />
+
+
+
     </group>
 </menu>

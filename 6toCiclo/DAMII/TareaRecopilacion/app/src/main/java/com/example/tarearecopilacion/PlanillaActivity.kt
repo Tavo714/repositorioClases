@@ -2,23 +2,17 @@ package com.example.tarearecopilacion
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.*
 
-class PlanillaActivity : AppCompatActivity() {
+class PlanillaActivity : DrawerBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_planilla)
+        val contentView = layoutInflater.inflate(R.layout.activity_planilla, null)
+        setContentView(contentView)
 
         val etEmpleado = findViewById<EditText>(R.id.etEmpleado)
         val etHoras = findViewById<EditText>(R.id.etHoras)
         val etTarifa = findViewById<EditText>(R.id.etTarifa)
-        val btnProcesar = findViewById<Button>(R.id.btnProcesar)
-        val btnLimpiar = findViewById<Button>(R.id.btnLimpiar)
 
         val tvEmpleadoIngresado = findViewById<TextView>(R.id.tvEmpleadoIngresado)
         val tvTotalHoras = findViewById<TextView>(R.id.tvTotalHoras)
@@ -28,7 +22,7 @@ class PlanillaActivity : AppCompatActivity() {
         val tvTotalAFP = findViewById<TextView>(R.id.tvTotalAFP)
         val tvTotalSueldoNeto = findViewById<TextView>(R.id.tvTotalSueldoNeto)
 
-        btnProcesar.setOnClickListener {
+        findViewById<Button>(R.id.btnProcesar).setOnClickListener {
             val nombre = etEmpleado.text.toString()
             val horas = etHoras.text.toString().toDoubleOrNull() ?: 0.0
             val tarifa = etTarifa.text.toString().toDoubleOrNull() ?: 0.0
@@ -47,7 +41,7 @@ class PlanillaActivity : AppCompatActivity() {
             tvTotalSueldoNeto.text = "%.2f".format(sueldoNeto)
         }
 
-        btnLimpiar.setOnClickListener {
+        findViewById<Button>(R.id.btnLimpiar).setOnClickListener {
             etEmpleado.text.clear()
             etHoras.text.clear()
             etTarifa.text.clear()
@@ -60,10 +54,8 @@ class PlanillaActivity : AppCompatActivity() {
             tvTotalSueldoNeto.text = ""
         }
 
-        val volver: (Button) = findViewById(R.id.btnVolver)
-        volver.setOnClickListener {
-            val intent = Intent(this, CurriculumActivity::class.java)
-            startActivity(intent)
+        findViewById<Button>(R.id.btnVolver).setOnClickListener {
+            startActivity(Intent(this, CurriculumActivity::class.java))
         }
     }
 }

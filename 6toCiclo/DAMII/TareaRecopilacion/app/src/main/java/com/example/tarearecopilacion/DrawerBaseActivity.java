@@ -50,6 +50,8 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
             startActivity(new Intent(this, PlanillaActivity.class));
         } else if (id == R.id.nav_programador) {
             startActivity(new Intent(this, ProgramaorActivity.class));
+        } else if (id == R.id.nav_mapa) {
+            startActivity(new Intent(this, MapsActivity.class));
         }
 
         drawerLayout.closeDrawers();

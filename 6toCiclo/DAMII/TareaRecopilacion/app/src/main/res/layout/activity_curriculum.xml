@@ -33,7 +33,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/foto" />
+                    android:src="@drawable/circledphoto" />
 
                 <TextView
                     android:layout_width="wrap_content"
