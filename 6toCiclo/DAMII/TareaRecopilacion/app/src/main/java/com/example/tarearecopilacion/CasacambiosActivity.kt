@@ -2,19 +2,13 @@ package com.example.tarearecopilacion
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.widget.*
 
-class CasacambiosActivity : AppCompatActivity() {
+class CasacambiosActivity : DrawerBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_casacambios)
+        val contentView = layoutInflater.inflate(R.layout.activity_casacambios, null)
+        setContentView(contentView)
 
         val etSoles = findViewById<EditText>(R.id.etSoles)
         val etDolares = findViewById<EditText>(R.id.etDolares)
@@ -54,11 +48,8 @@ class CasacambiosActivity : AppCompatActivity() {
             tvTotalEuros.text = "0.00 Euros"
         }
 
-        val volver: (Button) = findViewById(R.id.btnVolver)
-        volver.setOnClickListener {
-            val intent = Intent(this, CurriculumActivity::class.java)
-            startActivity(intent)
+        findViewById<Button>(R.id.btnVolver).setOnClickListener {
+            startActivity(Intent(this, CurriculumActivity::class.java))
         }
-
     }
 }

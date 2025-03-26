@@ -6,12 +6,11 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 
-class CurriculumActivity : AppCompatActivity() {
+class CurriculumActivity : DrawerBaseActivity() {
 
     private var isSobreMiVisible = false
     private var isProyectosVisible = false
@@ -19,7 +18,10 @@ class CurriculumActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_curriculum)
+
+        // Inflamos la vista y la pasamos al método setContentView de DrawerBaseActivity
+        val contentView = layoutInflater.inflate(R.layout.activity_curriculum, null)
+        setContentView(contentView)
 
         // Configuración de los botones de los proyectos
         findViewById<Button>(R.id.btnCuentos).setOnClickListener {
@@ -40,8 +42,8 @@ class CurriculumActivity : AppCompatActivity() {
         val imageList = arrayListOf(
             SlideModel(R.drawable.androidstudio, ScaleTypes.FIT),
             SlideModel(R.drawable.firebase, ScaleTypes.FIT),
-            SlideModel(R.drawable.react,ScaleTypes.FIT),
-            SlideModel(R.drawable.angular,ScaleTypes.FIT),
+            SlideModel(R.drawable.react, ScaleTypes.FIT),
+            SlideModel(R.drawable.angular, ScaleTypes.FIT),
             SlideModel(R.drawable.tailwind, ScaleTypes.FIT),
             SlideModel(R.drawable.java, ScaleTypes.FIT),
             SlideModel(R.drawable.springboot, ScaleTypes.FIT)

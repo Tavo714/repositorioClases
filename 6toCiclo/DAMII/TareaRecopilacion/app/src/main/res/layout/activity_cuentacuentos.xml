@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="true"
+    tools:context=".CuentacuentosActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +26,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:textColor="#0F2DD2"/>
+                android:textColor="#0F2DD2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,14 +34,14 @@
                 android:text='En una isla remota, azotada por tormentas interminables, se erguía un viejo faro al borde del acantilado. Su luz, aunque tenue, había salvado incontables vidas, pero con los años, los barcos modernos dejaron de necesitarlo. Los lugareños lo llamaban "El Faro Olvidado".'
                 android:textSize="15sp"
                 android:paddingTop="20dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/lighthouse"
                 android:layout_marginTop="20dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,14 +49,14 @@
                 android:textSize="15sp"
                 android:text='El faro no estaba del todo desierto. Su único habitante era un hombre llamado Erland, un antiguo marinero que había jurado protegerlo. Aunque nadie le había pedido que se quedara, él sentía que era su deber. Cada noche, subía los estrechos escalones y encendía la linterna, viendo cómo su débil luz atravesaba la tormenta.'
                 android:paddingTop="20dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/oldie"
                 android:layout_marginTop="20dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,14 +70,14 @@ Intrigado, Erland le permitió quedarse. Juntos, exploraron el faro y encontraro
 
 Desde ese día, el faro volvió a iluminar con un propósito renovado, y Erland y Liriel trabajaron juntos para desentrañar los secretos del océano.'
                 android:paddingTop="20dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/map"
                 android:layout_marginTop="20dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
             <Button
                 android:id="@+id/btnVolver"
@@ -84,7 +85,7 @@ Desde ese día, el faro volvió a iluminar con un propósito renovado, y Erland 
                 android:layout_height="wrap_content"
                 android:text="Volver"
                 android:textSize="20sp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp" />
 
         </LinearLayout>
 

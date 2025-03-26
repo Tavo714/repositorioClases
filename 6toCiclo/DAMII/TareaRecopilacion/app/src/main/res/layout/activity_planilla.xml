@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    android:fitsSystemWindows="true">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,7 +18,7 @@
         android:textColor="#000000"
         android:background="#FF9800"
         android:padding="12dp"
-        android:elevation="4dp"/>
+        android:elevation="4dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,8 +27,7 @@
         android:orientation="vertical"
         android:background="#FFFFFF"
         android:padding="12dp"
-        android:elevation="4dp"
-        >
+        android:elevation="4dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -35,7 +36,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#333333"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="8dp" />
 
         <EditText
             android:id="@+id/etEmpleado"
@@ -45,7 +46,7 @@
             android:inputType="text"
             android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
-            android:padding="8dp"/>
+            android:padding="8dp" />
 
         <EditText
             android:id="@+id/etHoras"
@@ -55,7 +56,7 @@
             android:inputType="numberDecimal"
             android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
-            android:padding="8dp"/>
+            android:padding="8dp" />
 
         <EditText
             android:id="@+id/etTarifa"
@@ -65,7 +66,7 @@
             android:inputType="numberDecimal"
             android:textColor="@color/black"
             android:background="@android:drawable/editbox_background"
-            android:padding="8dp"/>
+            android:padding="8dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,7 +82,7 @@
             android:layout_weight="1"
             android:text="Procesar"
             android:backgroundTint="#4CAF50"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/btnLimpiar"
@@ -90,7 +91,7 @@
             android:layout_weight="1"
             android:text="Limpiar"
             android:backgroundTint="#F44336"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/btnVolver"
@@ -98,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Volver"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
     <LinearLayout
@@ -108,7 +109,6 @@
         android:background="#FFFFFF"
         android:padding="12dp"
         android:elevation="4dp"
-
         android:orientation="vertical">
 
         <TextView
@@ -118,7 +118,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#333333"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="8dp" />
 
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Empleado:" android:textSize="16sp" android:textStyle="bold"/>
         <TextView android:id="@+id/tvEmpleadoIngresado" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000" />

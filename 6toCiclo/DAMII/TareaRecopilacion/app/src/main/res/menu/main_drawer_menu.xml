@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/nav_home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/nav_cuentacuentos"
+            android:icon="@drawable/ic_cuentos"
+            android:title="Cuentacuentos" />
+
+        <item
+            android:id="@+id/nav_casa_cambios"
+            android:icon="@drawable/ic_casa"
+            android:title="Casa de Cambios" />
+
+        <item
+            android:id="@+id/nav_planillas"
+            android:icon="@drawable/ic_planilla"
+            android:title="Planillas" />
+
+        <item
+            android:id="@+id/nav_programador"
+            android:icon="@drawable/ic_programador"
+            android:title="Programador" />
+
+    </group>
+</menu>

@@ -2,21 +2,13 @@ package com.example.tarearecopilacion
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.widget.*
 
-class ProgramaorActivity : AppCompatActivity() {
+class ProgramaorActivity : DrawerBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_programaor)
+        val contentView = layoutInflater.inflate(R.layout.activity_programaor, null)
+        setContentView(contentView)
 
         val etNombres = findViewById<EditText>(R.id.etNombres)
         val etEdad = findViewById<EditText>(R.id.etEdad)
@@ -25,31 +17,33 @@ class ProgramaorActivity : AppCompatActivity() {
         val cbJunior = findViewById<CheckBox>(R.id.cbJunior)
         val cbIntermedio = findViewById<CheckBox>(R.id.cbIntermedio)
         val cbSenior = findViewById<CheckBox>(R.id.cbSenior)
-        val btnCalcular = findViewById<Button>(R.id.btnCalcular)
-        val btnLimpiar = findViewById<Button>(R.id.btnLimpiar)
 
-        val tvResultadoNombresText = findViewById<TextView>(R.id.tvResultadoNombresText)
-        val tvResultadoEdadText = findViewById<TextView>(R.id.tvResultadoEdadText)
-        val tvResultadoSexoText = findViewById<TextView>(R.id.tvResultadoSexoText)
-        val tvResultadoSueldoText = findViewById<TextView>(R.id.tvResultadoSueldoText)
+        val tvNombres = findViewById<TextView>(R.id.tvResultadoNombresText)
+        val tvEdad = findViewById<TextView>(R.id.tvResultadoEdadText)
+        val tvSexo = findViewById<TextView>(R.id.tvResultadoSexoText)
+        val tvSueldo = findViewById<TextView>(R.id.tvResultadoSueldoText)
 
-        btnCalcular.setOnClickListener {
+        findViewById<Button>(R.id.btnCalcular).setOnClickListener {
             val nombres = etNombres.text.toString()
             val edad = etEdad.text.toString()
-            val sexo = if (rbMasculino.isChecked) "Masculino" else if (rbFemenino.isChecked) "Femenino" else "No especificado"
+            val sexo = when {
+                rbMasculino.isChecked -> "Masculino"
+                rbFemenino.isChecked -> "Femenino"
+                else -> "No especificado"
+            }
 
             var sueldo = 0
             if (cbJunior.isChecked) sueldo += 1500
             if (cbIntermedio.isChecked) sueldo += 3000
             if (cbSenior.isChecked) sueldo += 5000
 
-            tvResultadoNombresText.text = nombres
-            tvResultadoEdadText.text = edad
-            tvResultadoSexoText.text = sexo
-            tvResultadoSueldoText.text = "S/ $sueldo"
+            tvNombres.text = nombres
+            tvEdad.text = edad
+            tvSexo.text = sexo
+            tvSueldo.text = "S/ $sueldo"
         }
 
-        btnLimpiar.setOnClickListener {
+        findViewById<Button>(R.id.btnLimpiar).setOnClickListener {
             etNombres.text.clear()
             etEdad.text.clear()
             rbMasculino.isChecked = false
@@ -57,16 +51,14 @@ class ProgramaorActivity : AppCompatActivity() {
             cbJunior.isChecked = false
             cbIntermedio.isChecked = false
             cbSenior.isChecked = false
-            tvResultadoNombresText.text = ""
-            tvResultadoEdadText.text = ""
-            tvResultadoSexoText.text = ""
-            tvResultadoSueldoText.text = ""
+            tvNombres.text = ""
+            tvEdad.text = ""
+            tvSexo.text = ""
+            tvSueldo.text = ""
         }
 
-        val volver: (Button) = findViewById(R.id.btnVolver)
-        volver.setOnClickListener {
-            val intent = Intent(this, CurriculumActivity::class.java)
-            startActivity(intent)
+        findViewById<Button>(R.id.btnVolver).setOnClickListener {
+            startActivity(Intent(this, CurriculumActivity::class.java))
         }
     }
 }

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -19,288 +23,168 @@
             android:textColor="@color/white"
             android:background="#1565C0"
             android:padding="12dp"
-            android:elevation="4dp"/>
+            android:elevation="4dp" />
+
+        <ImageView
+            android:id="@+id/imgEmpresa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/empresa" />
+
+        <!-- Nombres -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombres:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/etNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:hint="Ingrese sus nombres" />
+        </LinearLayout>
+
+        <!-- Edad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="2"
+                android:hint="Ingrese su edad"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <!-- Sexo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="20dp">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imgEmpresa"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:scaleType="centerCrop"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/empresa" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombres:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:layout_weight="1" />
-
-                <EditText
-                    android:id="@+id/etNombres"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:layout_weight="2"
-                    android:hint="Ingrese sus nombres" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Edad:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:layout_weight="1" />
-
-                <EditText
-                    android:id="@+id/etEdad"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:layout_weight="2"
-                    android:hint="Ingrese su edad"
-                    android:inputType="number" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sexo:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/rbMasculino"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:text="Masculino"
-                        android:textColor="@color/black"/>
-
-                    <RadioButton
-                        android:id="@+id/rbFemenino"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:text="Femenino"
-                        android:textColor="@color/black"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Niveles Trabajados:"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <CheckBox
-                    android:id="@+id/cbJunior"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Junior (S/1500)"
-                    android:textColor="@color/black"/>
-
-                <CheckBox
-                    android:id="@+id/cbIntermedio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Intermedio (S/3000)"
-                    android:textColor="@color/black"/>
-
-                <CheckBox
-                    android:id="@+id/cbSenior"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Senior (S/5000)"
-                    android:textColor="@color/black"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnCalcular"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginHorizontal="10dp"
-                    android:text="Calcular" />
-
-                <Button
-                    android:id="@+id/btnLimpiar"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginHorizontal="10dp"
-                    android:text="Limpiar" />
-
-                <Button
-                    android:id="@+id/btnVolver"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginHorizontal="10dp"
-                    android:text="Volver" />
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Resultados"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:paddingTop="12dp" />
-
-            <LinearLayout
-
+            <RadioButton
+                android:id="@+id/rbMasculino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:layout_marginHorizontal="20dp"
+                android:text="Masculino"
+                android:textColor="@color/black" />
 
-                <TextView
-                    android:id="@+id/tvResultadoNombres"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nombres: "
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/tvResultadoNombresText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="18sp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-
+            <RadioButton
+                android:id="@+id/rbFemenino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tvResultadoEdad"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Edad: "
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/tvResultadoEdadText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="18sp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tvResultadoSexo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sexo: "
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/tvResultadoSexoText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="18sp"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tvResultadoSueldo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sueldo: "
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/tvResultadoSueldoText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:textSize="18sp"/>
-
-
-
-            </LinearLayout>
-
+                android:layout_marginHorizontal="20dp"
+                android:text="Femenino"
+                android:textColor="@color/black" />
         </LinearLayout>
 
+        <!-- Niveles -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Niveles Trabajados:"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cbJunior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Junior (S/1500)"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/cbIntermedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intermedio (S/3000)"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/cbSenior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senior (S/5000)"
+            android:textColor="@color/black" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:text="Calcular" />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:text="Limpiar" />
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:text="Volver" />
+        </LinearLayout>
+
+        <!-- Resultados -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultados"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="12dp" />
+
+        <TextView android:id="@+id/tvResultadoNombresText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nombres: " />
+        <TextView android:id="@+id/tvResultadoEdadText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edad: " />
+        <TextView android:id="@+id/tvResultadoSexoText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sexo: " />
+        <TextView android:id="@+id/tvResultadoSueldoText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sueldo: " />
     </LinearLayout>
 </LinearLayout>
