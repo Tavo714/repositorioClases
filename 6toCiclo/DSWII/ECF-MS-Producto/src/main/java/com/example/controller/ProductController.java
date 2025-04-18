@@ -25,16 +25,18 @@ public class ProductController {
 
     @PostMapping("/agregar")
     public ResponseEntity<?> agregar(@RequestBody Product product) {
+        System.out.println("PRODUCTO RECIBIDO: " + product);
         productService.insert(product);
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<ProductDto> getProduct(@PathVariable("id") Long id) {
         ProductDto productDto = productService.getById(id);
         return ResponseEntity.ok(productDto);
     }
-    
+    	
     @GetMapping("/listar")
     public ResponseEntity<Iterable<ProductDto>> listar() {
         return ResponseEntity.ok(productService.getAll());

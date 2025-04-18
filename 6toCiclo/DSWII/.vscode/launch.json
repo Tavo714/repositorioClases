@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Oauth2Application<oauth2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pixelpulse.oauth2.Oauth2Application",
+            "projectName": "oauth2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57269 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=oauth2",
+            "noDebug": false,
+            "__progressId": "51bc1484-a246-492e-9988-345127fcabbf",
+            "__origin": "internal"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Oauth2resourseApplication<oauth2resourse>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.pixelpulse.oauth2resourse.Oauth2resourseApplication",
+            "projectName": "oauth2resourse",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

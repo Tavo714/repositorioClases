@@ -32,8 +32,10 @@ public class ProductServiceImpl implements ProductService{
         return new ProductDto(
                 product.getId(),
                 product.getName(),
+                product.getDescription(),
                 product.getCategory(),
-                product.getUnitPrice()
+                product.getUnitPrice(),
+                product.getEstado()
         );
     }
     
