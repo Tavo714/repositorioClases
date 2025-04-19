@@ -24,11 +24,24 @@ public class ProductController {
     private ProductService productService;
 
     @PostMapping("/agregar")
-    public ResponseEntity<?> agregar(@RequestBody Product product) {
-        System.out.println("PRODUCTO RECIBIDO: " + product);
+    public ResponseEntity<?> agregar(@RequestBody ProductDto dto) {
+        System.out.println("PRODUCTO RECIBIDO: " + dto);
+
+        Product product = new Product(
+            dto.getId(),
+            dto.getName(),
+            dto.getDescription(),
+            dto.getCategory(),
+            dto.getUnitPrice(),
+            dto.getEstado(),
+            dto.getStock(),
+            dto.getStockMinimo()
+        );
+
         productService.insert(product);
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
+
 
 
     @GetMapping("/{id}")

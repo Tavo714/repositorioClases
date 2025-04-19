@@ -30,15 +30,17 @@ public class ProductServiceImpl implements ProductService{
     private ProductDto mapToDto(Product product) {
         if (product == null) return null;
         return new ProductDto(
-                product.getId(),
-                product.getName(),
-                product.getDescription(),
-                product.getCategory(),
-                product.getUnitPrice(),
-                product.getEstado()
+            product.getId(),
+            product.getName(),
+            product.getDescription(),
+            product.getCategory(),
+            product.getUnitPrice(),
+            product.getEstado(),
+            product.getStock(),
+            product.getStockMinimo()
         );
     }
-    
+
     @Override
     public Iterable<ProductDto> getAll() {
         Iterable<Product> productos = productRepository.findAll();
@@ -48,6 +50,7 @@ public class ProductServiceImpl implements ProductService{
         }
         return dtoList;
     }
+
 
     @Override
     public void update(Product product) {

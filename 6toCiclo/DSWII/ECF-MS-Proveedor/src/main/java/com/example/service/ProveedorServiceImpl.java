@@ -34,7 +34,13 @@ public class ProveedorServiceImpl implements ProveedorService {
     @Override
     public ProveedorDto getById(Long id) {
         return proveedorRepository.findById(id)
-                .map(p -> new ProveedorDto(p.getId(), p.getNombre(), p.getDireccion(), p.getTelefono()))
+                .map(p -> new ProveedorDto(
+                    p.getId(),
+                    p.getRazonSocial(),
+                    p.getDireccion(),
+                    p.getTelefono(),
+                    p.getCorreo(),
+                    p.getContacto()))
                 .orElse(null);
     }
 
@@ -42,7 +48,13 @@ public class ProveedorServiceImpl implements ProveedorService {
     public List<ProveedorDto> getAll() {
         List<Proveedor> proveedores = (List<Proveedor>) proveedorRepository.findAll();
         return proveedores.stream()
-                .map(p -> new ProveedorDto(p.getId(), p.getNombre(), p.getDireccion(), p.getTelefono()))
+                .map(p -> new ProveedorDto(
+                    p.getId(),
+                    p.getRazonSocial(),
+                    p.getDireccion(),
+                    p.getTelefono(),
+                    p.getCorreo(),
+                    p.getContacto()))
                 .collect(Collectors.toList());
     }
 }
